@@ -1,7 +1,5 @@
-"use client";
-
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+import Provider from "./Provider";
 import { Footer, Header } from "@/components/layout";
 import "@/style/globals.scss";
 
@@ -24,13 +22,13 @@ export default function RootLayout({
   return (
     <html lang="ru" suppressHydrationWarning>
       <body className={`${inter.className}`}>
-        <ThemeProvider>
+        <Provider>
           <div className="container mx-auto">
             <Header />
             {children}
           </div>
           <Footer />
-        </ThemeProvider>
+        </Provider>
       </body>
     </html>
   );
