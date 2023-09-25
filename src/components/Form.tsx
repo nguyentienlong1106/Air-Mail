@@ -1,7 +1,7 @@
 const Form = () => {
   return (
     <div className="grid grid-cols-5 mt-[100px]">
-      <div className="col-span-3">
+      <div className="col-span-3 w-[738px]">
         <h2 className="font-ubuntu text-[40px] leading-[56px]">
           Получите бесплатный аудит ваших рассылок и репутации домена,
         </h2>

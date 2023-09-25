@@ -7,6 +7,12 @@ import Infor1 from "./Infor1";
 import Form from "./Form";
 import Seo_infor from "./Seo_infor";
 import Language from "./Language";
+import Banner from "./Banner";
+import Function from "./Function";
+import Function_icon from "./Function_icon";
+import Step from "./Step";
+import Result from "./Result";
+import Text from "./Text";
 
 export {
   Guide,
@@ -18,4 +24,10 @@ export {
   Form,
   Seo_infor,
   Language,
+  Banner,
+  Function,
+  Function_icon,
+  Step,
+  Result,
+  Text,
 };
