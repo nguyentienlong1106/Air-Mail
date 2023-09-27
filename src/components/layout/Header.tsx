@@ -14,9 +14,9 @@ const Header = () => {
           </span>
         </Link>
         <div className="grid grid-cols-3 items-center ml-[54px] text-[18px] leading-[23.4px]">
-          <Link href="/about_us">О нас</Link>
+          <Link href="#about_us">О нас</Link>
           <Link href="/service">Услуги</Link>
-          <Link href="/contact">Контакты</Link>
+          <Link href="#contact">Контакты</Link>
         </div>
       </div>
       <div className="col-span-1 flex justify-end items-center gap-[24px]">

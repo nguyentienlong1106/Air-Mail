@@ -1,5 +1,5 @@
 "use client";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { SlArrowDown } from "react-icons/sl";
 
@@ -45,9 +45,18 @@ const Question = () => {
                     className={`w-[40px] h-[40px] ${open ? "rotate-90" : ""}`}
                   />
                 </Disclosure.Button>
-                <Disclosure.Panel className="text-[24px] leading-[33.6px] w-[1034px] max-w-full mb-[36px] ml-[24px] border-l-[1px] pl-[20px]  border-solid border-[#C9C9C9]">
-                  {e.answer}
-                </Disclosure.Panel>
+                <Transition
+                  enter="transition duration-250 ease-out"
+                  enterFrom="transform scale-95 opacity-0"
+                  enterTo="transform scale-100 opacity-100"
+                  leave="transition duration-100 ease-out"
+                  leaveFrom="transform scale-100 opacity-100"
+                  leaveTo="transform scale-95 opacity-0"
+                >
+                  <Disclosure.Panel className="text-[24px] leading-[33.6px] w-[1034px] max-w-full mb-[36px] ml-[24px] border-l-[1px] pl-[20px]  border-solid border-[#C9C9C9]">
+                    {e.answer}
+                  </Disclosure.Panel>
+                </Transition>
               </>
             )}
           </Disclosure>

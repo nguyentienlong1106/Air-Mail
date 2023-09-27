@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Seo_infor = () => {
   return (
-    <div className="bg-gradient-to-br hover:bg-gradient-to-r from-[#0019FF] to-[#7481f8] mt-[100px] h-[775px] rounded-[32px] grid grid-cols-5 gap-[24px] z-10 relative">
+    <div
+      id="contact"
+      className="bg-gradient-to-br hover:bg-gradient-to-r from-[#0019FF] to-[#7481f8] mt-[100px] h-[775px] rounded-[32px] grid grid-cols-5 gap-[24px] z-10 relative"
+    >
       <div className="col-span-2 mt-[56px] ml-[55px] relative text-white ">
         <h2 className="font-ubuntu text-[40px] leading-[56px] mb-[32px]">
           Свяжитесь с нами любым удобным способом

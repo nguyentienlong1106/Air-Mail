@@ -11,7 +11,7 @@ import {
   Seo_infor,
 } from "@/components";
 
-const About_us = () => {
+const page = () => {
   return (
     <div>
       <Banner />
@@ -28,4 +28,4 @@ const About_us = () => {
   );
 };
 
-export default About_us;
+export default page;

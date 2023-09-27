@@ -28,17 +28,17 @@ const data2 = [
   {
     name: "Mail.ru",
     img: "/mail1.png",
-    href: "/email/Mail",
+    href: "/service/email/Mail",
   },
   {
     name: "Yandex.ru",
     img: "/mail2.png",
-    href: "/email/Mail",
+    href: "/service/email/Mail",
   },
   {
     name: "Gmail.com",
     img: "/mail3.png",
-    href: "/email/Mail",
+    href: "/service/email/Mail",
   },
 ];
 const data3 = [
@@ -67,7 +67,7 @@ const data4 = [
   {
     name: "Настройка сервисов почтовых рассылок",
     img: "/5.png",
-    href: "/",
+    href: "/service/setting_mail",
   },
 ];
 

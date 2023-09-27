@@ -4,7 +4,7 @@ import { Language, ThemeChanger } from "..";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#7db9ff] xl:mt-[148px] text-white h-[478px] ">
+    <footer className="bg-[#7db9ff] xl:mt-[148px] text-white h-[478px] relative z-10">
       <div className="container mx-auto">
         <div className=" grid grid-cols-3 xl:mx-[80px] pt-[30px] pb-[39px] gap-[50px]">
           <div className="col-span-1 grid h-[56px] text-[18px] leading-[23px]">

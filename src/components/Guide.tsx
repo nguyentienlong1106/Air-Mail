@@ -21,7 +21,7 @@ const Data = [
 
 const Guide = () => {
   return (
-    <div className="mt-[140px] grid justify-items-center">
+    <div id="about_us" className="mt-[140px] grid justify-items-center">
       <h2 className="font-ubuntu text-[40px] leading-[56px] text-center w-[814px]">
         Помогаем сократить потери и увеличить выручку от e-mail маркетинга
       </h2>
