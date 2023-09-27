@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Provider from "./Provider";
 import { Footer, Header } from "@/components/layout";
 import "@/style/globals.scss";
+import Design from "./Design";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="ru" suppressHydrationWarning>
       <body className={`${inter.className}`}>
+        <Design />
         <Provider>
           <div className="container mx-auto">
             <Header />

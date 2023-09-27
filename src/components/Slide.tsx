@@ -9,11 +9,11 @@ import "swiper/css/scrollbar";
 import { useSwiper } from "swiper/react";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
-const Slide = () => {
+const Slide = ({ title }: { title: string }) => {
   return (
-    <div className="mt-[140px] ">
-      <h2 className="text-[40px] leading-[56px] font-ubuntu grid justify-center mb-[48px]">
-        Основные направления работы
+    <div className="mt-[140px]">
+      <h2 className="text-[40px] leading-[56px] font-ubuntu grid  mb-[48px]">
+        {title}
       </h2>
       <Swiper
         modules={[Pagination, A11y, Autoplay, Navigation]}

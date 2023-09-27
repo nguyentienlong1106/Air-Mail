@@ -10,10 +10,10 @@ const Poster = () => {
         количество писем до ваших пользователей.
       </h3>
       <div className="flex mt-[48px] gap-[59px]">
-        <button className="bg-accent text-white  py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px]">
+        <button className="bg-accent text-white  py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] hover:scale-110 duration-100">
           Смотреть услуги
         </button>
-        <button className="border-accent border-solid border-2  py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px]">
+        <button className="border-accent border-solid border-2  py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] hover:scale-110 duration-100">
           Получить консультацию
         </button>
       </div>

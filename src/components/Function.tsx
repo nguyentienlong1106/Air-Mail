@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Function = () => {
   return (
-    <div className="bg-[#E8F1FF] dark:bg-[#C6DDFF] h-[614px] mt-[140px] rounded-[30px] text-black">
+    <div className="bg-[#E8F1FF] dark:bg-[#C6DDFF] h-[614px] mt-[140px] rounded-[30px] text-black z-10 relative">
       <div className="py-[56px] px-[77px] grid justify-items-center">
         <h2 className="font-ubuntu font-bold text-[40px] leading-[56px] text-accent ">
           Для чего нужны рассылки?

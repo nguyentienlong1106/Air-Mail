@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Infor1 = () => {
   return (
-    <div className="grid grid-cols-5 bg-accent mt-[100px] lg:mx-[-80px] rounded-lg">
+    <div className="grid grid-cols-5 bg-accent mt-[100px] lg:mx-[-80px] rounded-lg z-10 relative">
       <div className="col-span-2 mx-[80px] text-white mt-[56px] ml-[78px]">
         <h2
           className="font-ubuntu font-medium text-[40px] leading-[56px]

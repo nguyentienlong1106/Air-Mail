@@ -13,6 +13,8 @@ import Function_icon from "./Function_icon";
 import Step from "./Step";
 import Result from "./Result";
 import Text from "./Text";
+import Progress from "./Progress";
+import Step_email from "./Step_email";
 
 export {
   Guide,
@@ -30,4 +32,6 @@ export {
   Step,
   Result,
   Text,
+  Progress,
+  Step_email,
 };

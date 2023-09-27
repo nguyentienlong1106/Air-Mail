@@ -78,7 +78,7 @@ const Step = () => {
           </div>
         ))}
       </div>
-      <button className="bg-accent px-11 py-6 text-white rounded-[900px] text-[24px] leading-[31px] mt-[56px] absolute right-20 ">
+      <button className="bg-accent px-11 py-6 text-white rounded-[900px] text-[24px] leading-[31px] mt-[56px] absolute right-20 hover:scale-110 duration-100">
         Узнать точную стоимость вывода из спама услугу
       </button>
     </div>

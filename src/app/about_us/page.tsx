@@ -11,7 +11,7 @@ import {
   Seo_infor,
 } from "@/components";
 
-const Setting = () => {
+const About_us = () => {
   return (
     <div>
       <Banner />
@@ -20,7 +20,7 @@ const Setting = () => {
       <Step />
       <Result />
       <Guide />
-      <Slide />
+      <Slide title="Другие услуги" />
       <Form />
       <Seo_infor />
       <Question />
@@ -28,4 +28,4 @@ const Setting = () => {
   );
 };
 
-export default Setting;
+export default About_us;

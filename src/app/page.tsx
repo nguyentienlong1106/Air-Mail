@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="lg:mx-[80px] lg:mt-[24px]">
       <Poster />
-      <Slide />
+      <Slide title="Основные направления работы" />
       <Guide />
       <Infor1 />
       <Form />
