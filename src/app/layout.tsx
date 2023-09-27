@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} container_zoom`}>
         <Design />
         <Provider>
           <div className="container mx-auto">

@@ -9,10 +9,12 @@ import "swiper/css/scrollbar";
 import { useSwiper } from "swiper/react";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
-const Slide = ({ title }: { title: string }) => {
+const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
   return (
     <div className="mt-[140px]">
-      <h2 className="text-[40px] leading-[56px] font-ubuntu grid  mb-[48px]">
+      <h2
+        className={` ${styleText} text-[40px] leading-[56px] font-ubuntu grid mb-[48px]`}
+      >
         {title}
       </h2>
       <Swiper

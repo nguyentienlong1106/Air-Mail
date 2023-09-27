@@ -152,7 +152,7 @@ const Service = () => {
             <Link
               key={i}
               href={e.href}
-              className="col-span-1 relative w-full h-[410px] px-[32px] pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
+              className="col-span-1 relative w-full h-[410px] px-[32px] pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100 overflow-hidden"
             >
               <h3 className="font-medium text-black text-[32px] leading-[45px]">
                 {e.name}

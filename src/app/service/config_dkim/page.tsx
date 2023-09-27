@@ -71,7 +71,7 @@ const page = () => {
       <Step />
       <Result />
       <Guide />
-      <Slide title="Другие услуги" />
+      <Slide title="Другие услуги" styleText="" />
       <Form />
       <Seo_infor />
       <Question />
