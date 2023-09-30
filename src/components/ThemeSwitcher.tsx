@@ -2,6 +2,7 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { Switch } from "@headlessui/react";
+import Image from "next/image";
 
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
@@ -16,7 +17,7 @@ const ThemeChanger = () => {
     if (mounted) {
       setTheme(enabled ? "light" : "dark");
     }
-  }, [mounted, enabled]);
+  }, [mounted, enabled, setTheme]);
 
   if (!mounted) {
     return null;
@@ -37,7 +38,23 @@ const ThemeChanger = () => {
           enabled ? "translate-x-6" : "translate-x-1 text-black"
         } h-[28px] w-[36px] transform rounded-full bg-white transition grid content-center`}
       >
-        {theme}{" "}
+        {theme === "light" ? (
+          <Image
+            src="/Sun.png"
+            className="ml-2"
+            alt=""
+            width={20}
+            height={20}
+          />
+        ) : (
+          <Image
+            src="/Moon.png"
+            className="ml-2"
+            alt=""
+            width={20}
+            height={20}
+          />
+        )}
       </span>
     </Switch>
   );

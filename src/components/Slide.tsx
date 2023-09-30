@@ -11,9 +11,9 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 
 const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
   return (
-    <div className="mt-[140px]">
+    <div className="lg:mt-[140px] mt-[93px]">
       <h2
-        className={` ${styleText} text-[40px] leading-[56px] font-ubuntu grid mb-[48px]`}
+        className={` ${styleText} text-2xl lg:text-[40px] leading-[56px] font-ubuntu mb-[24px] lg:mb-[48px]`}
       >
         {title}
       </h2>
@@ -28,22 +28,31 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
         loop={true}
         speed={2000}
       >
-        <SwiperSlide>
-          <div className="relative w-[1064px] h-[436px] border-[3px] border-solid border-accent rounded-[30px] overflow-hidden">
-            <div className="grid                                          grid-cols-5">
-              <div className="col-span-3 mt-[51px] ml-[94px]">
-                <h2 className="font-ubuntu text-[40px] leading-[56px] w-[347px]">
+        <SwiperSlide className="relative p-2">
+          <div className="relative w-full lg:w-[1064px] h-[436px] lg:border-[3px] lg:border-solid lg:border-accent rounded-[30px] overflow-hidden bg-slide bg-no-repeat bg-cover bg-center lg:bg-none">
+            <div className="grid lg:grid-cols-5 z-10 relative">
+              <div className="lg:col-span-3 mt-[32px] lg:mt-[51px] mx-[28px] lg:ml-[94px]">
+                <h2 className="font-ubuntu text-2xl lg:text-[40px] leading-[56px] w-[347px] text-white lg:text-current">
                   Вытаскиваем письма из спама
                 </h2>
-                <p className="font-medium text-[20px] leading-[28px] mt-[24px] w-[500px] text-description_light dark:text-description_dark">
+                <p className="font-medium text-lg lg:text-[20px] leading-[28px] mt-[24px] lg:w-[500px] text-[#D8D8D8] lg:text-description_dark">
                   Если ваши рассылки или welcome-цепочки попадают сразу в папку
                   «спам» и не доходят до пользователей
                 </p>
-                <button className="bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
+                <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
                   Подробнее
                 </button>
+                <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
+                  <Image
+                    src="/Vector_white.png"
+                    alt=""
+                    width={16}
+                    height={16}
+                    priority={true}
+                  />
+                </button>
               </div>
-              <div className="col-span-2">
+              <div className="hidden lg:block lg:col-span-2">
                 <Image
                   src="/banner1.png"
                   alt=""
@@ -55,23 +64,33 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
               </div>
             </div>
           </div>
+          <div className="lg:hidden absolute inset-0 bg-black opacity-20 rounded-[40px] m-2"></div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-[1064px] h-[436px] border-[3px] border-solid border-accent rounded-[30px] overflow-hidden">
-            <div className="grid                                          grid-cols-5">
-              <div className="col-span-3 mt-[51px] ml-[94px]">
-                <h2 className="font-ubuntu text-[40px] leading-[56px] w-[347px]">
+        <SwiperSlide className="relative p-2">
+          <div className="relative w-full lg:w-[1064px] h-[436px] lg:border-[3px] lg:border-solid lg:border-accent rounded-[30px] overflow-hidden bg-slide bg-no-repeat bg-cover bg-center lg:bg-none">
+            <div className="grid lg:grid-cols-5 z-10 relative">
+              <div className="lg:col-span-3 mt-[32px] lg:mt-[51px] mx-[28px] lg:ml-[94px]">
+                <h2 className="font-ubuntu text-2xl lg:text-[40px] leading-[56px] w-[347px] text-white lg:text-current">
                   Вытаскиваем письма из спама
                 </h2>
-                <p className="font-medium text-[20px] leading-[28px] mt-[24px] w-[500px] text-description_light dark:text-description_dark">
+                <p className="font-medium text-lg lg:text-[20px] leading-[28px] mt-[24px] lg:w-[500px] text-[#D8D8D8] lg:text-description_dark">
                   Если ваши рассылки или welcome-цепочки попадают сразу в папку
                   «спам» и не доходят до пользователей
                 </p>
-                <button className="bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
+                <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
                   Подробнее
                 </button>
+                <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
+                  <Image
+                    src="/Vector_white.png"
+                    alt=""
+                    width={16}
+                    height={16}
+                    priority={true}
+                  />
+                </button>
               </div>
-              <div className="col-span-2">
+              <div className="hidden lg:block lg:col-span-2">
                 <Image
                   src="/banner1.png"
                   alt=""
@@ -83,23 +102,33 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
               </div>
             </div>
           </div>
+          <div className="lg:hidden absolute inset-0 bg-black opacity-20 rounded-[40px] m-2"></div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-[1064px] h-[436px] border-[3px] border-solid border-accent rounded-[30px] overflow-hidden">
-            <div className="grid                                          grid-cols-5">
-              <div className="col-span-3 mt-[51px] ml-[94px]">
-                <h2 className="font-ubuntu text-[40px] leading-[56px] w-[347px]">
+        <SwiperSlide className="relative p-2">
+          <div className="relative w-full lg:w-[1064px] h-[436px] lg:border-[3px] lg:border-solid lg:border-accent rounded-[30px] overflow-hidden bg-slide bg-no-repeat bg-cover bg-center lg:bg-none">
+            <div className="grid lg:grid-cols-5 z-10 relative">
+              <div className="lg:col-span-3 mt-[32px] lg:mt-[51px] mx-[28px] lg:ml-[94px]">
+                <h2 className="font-ubuntu text-2xl lg:text-[40px] leading-[56px] w-[347px] text-white lg:text-current">
                   Вытаскиваем письма из спама
                 </h2>
-                <p className="font-medium text-[20px] leading-[28px] mt-[24px] w-[500px] text-description_light dark:text-description_dark">
+                <p className="font-medium text-lg lg:text-[20px] leading-[28px] mt-[24px] lg:w-[500px] text-[#D8D8D8] lg:text-description_dark">
                   Если ваши рассылки или welcome-цепочки попадают сразу в папку
                   «спам» и не доходят до пользователей
                 </p>
-                <button className="bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
+                <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
                   Подробнее
                 </button>
+                <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
+                  <Image
+                    src="/Vector_white.png"
+                    alt=""
+                    width={16}
+                    height={16}
+                    priority={true}
+                  />
+                </button>
               </div>
-              <div className="col-span-2">
+              <div className="hidden lg:block lg:col-span-2">
                 <Image
                   src="/banner1.png"
                   alt=""
@@ -111,6 +140,7 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
               </div>
             </div>
           </div>
+          <div className="lg:hidden absolute inset-0 bg-black opacity-20 rounded-[40px] m-2"></div>
         </SwiperSlide>
         <SwiperNavButton />
       </Swiper>
@@ -121,7 +151,7 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
 const SwiperNavButton = () => {
   const swiper = useSwiper();
   return (
-    <div className="absolute flex top-[50%] -translate-y-[50%] z-50 w-full">
+    <div className="hidden absolute lg:flex top-[50%] -translate-y-[50%] z-50 w-full">
       <div
         className="relative w-[5rem] h-[5rem] cursor-pointer rounded-full overflow-hidden active:opacity-[0.9]"
         onClick={() => {

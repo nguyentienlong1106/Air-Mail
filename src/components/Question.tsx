@@ -28,8 +28,8 @@ const Data = [
 
 const Question = () => {
   return (
-    <div className="grid justify-items-center mb-[149px] mt-[100px] ">
-      <h1 className="text-[52px] leading-[72.8px] font-ubuntu mb-[48px]">
+    <div className="grid justify-items-center mb-[50px] lg:mb-[149px] mt-[40px] lg:mt-[100px] ">
+      <h1 className="text-2xl lg:text-[52px] leading-[72.8px] font-ubuntu lg:mb-[48px]">
         Ответили на популярные вопросы
       </h1>
       {Data.map((e, i) => (
@@ -37,12 +37,14 @@ const Question = () => {
           <Disclosure>
             {({ open }) => (
               <>
-                <Disclosure.Button className="flex justify-between items-center w-[1280px] h-[140px]">
-                  <span className="text-[32px] leading-[44.8px] ">
+                <Disclosure.Button className="flex gap-10 justify-between items-center w-full sm:w-[640px] md:w-[786px] lg:w-[1024px] xl:w-[1280px] h-[80px] lg:h-[140px]">
+                  <span className="text-lg lg:text-[32px] leading-[44.8px] text-left">
                     {e.question}
                   </span>
                   <SlArrowDown
-                    className={`w-[40px] h-[40px] ${open ? "rotate-90" : ""}`}
+                    className={`w-[20px] h-[20px] lg:w-[40px] lg:h-[40px] ${
+                      open ? "rotate-90" : ""
+                    }`}
                   />
                 </Disclosure.Button>
                 <Transition
@@ -53,7 +55,7 @@ const Question = () => {
                   leaveFrom="transform scale-100 opacity-100"
                   leaveTo="transform scale-95 opacity-0"
                 >
-                  <Disclosure.Panel className="text-[24px] leading-[33.6px] w-[1034px] max-w-full mb-[36px] ml-[24px] border-l-[1px] pl-[20px]  border-solid border-[#C9C9C9]">
+                  <Disclosure.Panel className="text-lg lg:text-[24px] leading-[33.6px] lg:w-[1034px] mb-[36px] ml-[24px] border-l-[1px] pl-[20px]  border-solid border-[#C9C9C9]">
                     {e.answer}
                   </Disclosure.Panel>
                 </Transition>

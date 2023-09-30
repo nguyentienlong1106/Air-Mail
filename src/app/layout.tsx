@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${inter.className} container_zoom`}>
         <Design />
         <Provider>
-          <div className="container mx-auto">
+          <div className="container mx-auto px-4">
             <Header />
             {children}
           </div>

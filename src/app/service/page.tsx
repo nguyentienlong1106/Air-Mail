@@ -75,25 +75,25 @@ const Service = () => {
   return (
     <div>
       <section>
-        <div className="grid justify-items-center mt-[116px] relative">
-          <h1 className="font-ubuntu text-[52px] leading-[56px] text-center">
+        <div className="grid justify-items-center mt-[56px] lg:mt-[116px] relative">
+          <h1 className="font-ubuntu text-3xl lg:text-[52px] leading-[56px] text-center">
             Наши услуги
           </h1>
-          <h3 className="font-medium text-[26px] text-center leading-[36.4px] text-description_light dark:text-description_dark w-[668px] mt-[32px]">
+          <h3 className="font-medium text-lg lg:text-[26px] text-center leading-[36.4px] text-description_light dark:text-description_dark lg:w-[668px] mt-[32px]">
             Помогаем вытащить письма из спама, пройти спам-фильтры и добавить
             любое количество писем до ваших пользователей.
           </h3>
-          <div className="flex gap-[59px] mt-[80px]">
-            <button className="bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] hover:scale-110 duration-100">
-              Заказать услугу
+          <div className="grid lg:flex mt-[48px] gap-5 lg:gap-[59px]">
+            <button className="bg-accent text-white  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
+              Смотреть услуги
             </button>
-            <button className="border-accent border-solid border-2  py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] overflow-hidden z-10 bg-white dark:bg-black hover:scale-110 duration-100">
+            <button className="border-accent border-solid border-2 py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] hover:scale-110 duration-100">
               Получить консультацию
             </button>
             <Image
               src="/Mouse_b.png"
               alt=""
-              className="absolute bottom-[6rem] right-[5rem]"
+              className=" hidden lg:block absolute bottom-[6rem] right-[5rem]"
               width={332}
               height={312}
             />
@@ -101,7 +101,7 @@ const Service = () => {
         </div>
       </section>
       <section>
-        <h2 className="mt-[120px] mb-[48px] font-ubuntu text-[52px] leading-[72px]">
+        <h2 className="mt-[120px] mb-[48px] font-ubuntu text-3xl lg:text-[52px] text-center lg:text-left leading-[72px]">
           Наши услуги
         </h2>
         <div className="grid grid-cols-2 gap-[24px]">

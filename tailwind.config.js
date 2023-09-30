@@ -22,6 +22,9 @@ module.exports = {
         description_light: "#707070",
         description_dark: "#A0A0A0",
       },
+      backgroundImage: {
+        slide: "url('/banner1.png')",
+      },
     },
   },
   corePlugins: {

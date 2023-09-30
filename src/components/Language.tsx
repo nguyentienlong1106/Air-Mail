@@ -18,10 +18,10 @@ const Language = () => {
       <span className="sr-only">Enable notifications</span>
       <span
         className={`${
-          enabled ? "translate-x-6" : "translate-x-1 text-black"
-        } h-[28px] w-[36px] transform rounded-full bg-white transition grid content-center`}
+          enabled ? "translate-x-6" : "translate-x-1"
+        }  text-black h-[28px] w-[36px] transform rounded-full bg-white transition grid content-center`}
       >
-        RU
+        {enabled === true ? "RU" : "EN"}
       </span>
     </Switch>
   );

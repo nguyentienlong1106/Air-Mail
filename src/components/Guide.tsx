@@ -1,4 +1,13 @@
+"use client";
+import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { useSwiper } from "swiper/react";
+import { Slide } from "./index";
 
 const Data = [
   {
@@ -21,19 +30,22 @@ const Data = [
 
 const Guide = () => {
   return (
-    <div id="about_us" className="mt-[140px] grid justify-items-center">
-      <h2 className="font-ubuntu text-[40px] leading-[56px] text-center w-[814px]">
+    <div
+      id="about_us"
+      className="lg:mt-[140px] mt-[56px] grid justify-items-center"
+    >
+      <h2 className="font-ubuntu text-2xl lg:text-[40px] lg:leading-[56px] text-center w-auto lg:w-[814px]">
         Помогаем сократить потери и увеличить выручку от e-mail маркетинга
       </h2>
-      <p className="font-medium text-[26px] leading-[36.4px] text-center mt-[32px] w-[668px] text-description_dark">
+      <p className="font-medium text-lg lg:text-[26px] leading-[36.4px] text-center mt-[16px] lg:mt-[32px] w-auto lg:w-[668px] text-description_dark">
         Находим слабые места, в которых вы теряете деньги и помогаем повысить
         эффективность вашего e-mail маркетинга
       </p>
-      <div className="grid grid-cols-2 gap-[42px] mt-[32px]">
+      <div className="grid lg:grid-cols-2 gap-4 lg:gap-[42px] mt-[32px]">
         {Data.map((e, i) => (
           <div
             key={i}
-            className="col-span-1 h-[526px] w-[590px] rounded-[8px] rounded-br-[80px] bg-accent px-[61px] py-[99px] relative text-white"
+            className="col-span-1 h-[300px] lg:h-[526px] lg:w-auto rounded-[30px] bg-accent px-[20px] py-[20px] relative text-white"
           >
             <Image
               src="/angle.svg"
@@ -43,10 +55,10 @@ const Guide = () => {
               height={95.54}
             />
 
-            <h2 className=" font-ubuntu font-medium text-[32px] leading-[44.8px] h-[130px]">
+            <h2 className=" font-ubuntu font-medium text-2xl lg:text-[32px] lg:leading-[44.8px] h-[130px]">
               {e.new}
             </h2>
-            <p className="mt-[94px] text-[24px] leading-[33.6px] font-medium ">
+            <p className="text-[#D8D8D8] lg:mt-[94px] text-lg lg:text-[24px] lg:leading-[33.6px] font-medium ">
               {e.desc}
             </p>
           </div>
