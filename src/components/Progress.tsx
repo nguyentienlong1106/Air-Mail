@@ -40,13 +40,13 @@ const Progress = () => {
   const { theme, setTheme } = useTheme();
   return (
     <div className="mt-[120px]">
-      <h2 className="font-ubuntu font-bold text-[40px] leading-[56px] mb-[48px]">
+      <h2 className="font-ubuntu font-bold text-3xl lg:text-[40px] leading-[56px] mb-[48px]">
         Как это происходит
       </h2>
       {data.map((e, i) => (
         <div
           key={i}
-          className="grid grid-cols-4 items-center gap-[100px] mb-[36px]"
+          className="grid grid-cols-4 items-center lg:gap-[100px] gap-5 mb-[36px]"
         >
           <div className="col-span-1">
             {theme === "dark" ? (
@@ -62,10 +62,10 @@ const Progress = () => {
             )}
           </div>
           <div className="col-span-3">
-            <h3 className="text-[32px] leading-[44.8px] font-medium mb-[16px]">
+            <h3 className="text-xl lg:text-[32px] leading-[44.8px] font-medium mb-[16px]">
               {e.name}
             </h3>
-            <p className="text-[24px] leading-[33.6px] text-description_light dark:text-description_dark w-[738px]">
+            <p className="text-lg lg:text-[24px] leading-[33.6px] text-description_light dark:text-description_dark w-[738px]">
               {e.desc}
             </p>
           </div>

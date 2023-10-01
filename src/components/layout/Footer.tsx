@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-3">
         <div className=" grid lg:grid-cols-3 xl:mx-[80px] pt-[30px] pb-[39px] lg:gap-[50px] gap-5">
           <div className="lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 h-[56px] text-[18px] leading-[23px]">
-            <Link href="/" className="flex">
+            <Link href="/" className="flex scale-75 lg:scale-100">
               <span className="font-tinos text-[40px] leading-[52px] ">
                 AIR
               </span>
@@ -17,7 +17,7 @@ const Footer = () => {
                 MAIL
               </span>
             </Link>
-            <div className="mt-[9px] grid justify-self-end lg:justify-self-start">
+            <div className="mt-[9px] text-sm lg:text-lg grid justify-self-end lg:justify-self-start">
               <span>© 2023 “AirMail” </span>
               <span>Все права защищены</span>
             </div>
@@ -26,7 +26,7 @@ const Footer = () => {
               <span>Политика конфиденциальности</span>
             </div>
           </div>
-          <div className="lg:col-span-1 mt-[10px] text-[18px] leading-[21.78px]">
+          <div className="lg:col-span-1 mt-[10px] text-sm lg:text-[18px] leading-[21.78px]">
             <h2 className=" font-semibold leading-[33.6px]">Услуги</h2>
             <p className="mt-[24px]">Настройка ESP</p>
             <p className="mt-[20px]">Вытаскиваем из спама</p>

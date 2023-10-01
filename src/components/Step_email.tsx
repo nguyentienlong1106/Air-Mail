@@ -2,6 +2,14 @@
 
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+import "@/style/globals.scss";
 
 const Data = [
   {
@@ -32,17 +40,17 @@ const Step_email = () => {
   return (
     <div className="mt-[156px] mb-[300px] relative">
       <div className="grid justify-center">
-        <h2 className="font-ubuntu font-bold text-[40px] leading-[56px] text-center">
+        <h2 className="font-ubuntu font-bold text-2xl lg:text-[40px] leading-[56px] text-center">
           Кому это подходит
         </h2>{" "}
-        <h3 className="text-[32px] leading-[44.8px] text-center mt-[16px]">
+        <h3 className="text-lg lg:text-[32px] leading-[44.8px] text-center mt-[16px]">
           Весь процесс занимает 14-16 дней.
         </h3>{" "}
-        <p className="text-[28px] leading-[36.4px] text-center w-[542px] text-description_dark mt-[12px]">
+        <p className="text-lg lg:text-[28px] leading-[36.4px] text-center lg:w-[542px] text-description_dark mt-[12px]">
           Точные сроки назовем после изучения ваших рассылок и ресурсов
         </p>{" "}
       </div>
-      <div className="grid grid-cols-3 gap-[24px] mt-[48px]">
+      <div className="hidden lg:grid grid-cols-3 gap-[24px] mt-[48px]">
         {Data.map((e, i) => (
           <div key={i} className="col-span-1 h-[564px] w-[411px]">
             {theme === "dark" ? (
@@ -69,9 +77,53 @@ const Step_email = () => {
           </div>
         ))}
       </div>
-      <button className="bg-accent px-11 py-6 text-white rounded-[900px] text-[24px] leading-[31px] mt-[56px] absolute right-20 bottom-[-14rem] hover:scale-110 duration-100">
-        Узнать точную стоимость вывода из спама услугу
-      </button>
+      <div className="lg:hidden">
+        <Swiper
+          slidesPerView={1.5}
+          spaceBetween={24}
+          freeMode={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[FreeMode, Pagination]}
+          className="mySwiper"
+        >
+          {Data.map((e, i) => (
+            <SwiperSlide key={i}>
+              <div key={i} className="col-span-1 h-[550px] w-[236px]">
+                {theme === "dark" ? (
+                  <Image
+                    src={e.imageD}
+                    className="mt-[24px]"
+                    alt=""
+                    width={180}
+                    height={180}
+                  />
+                ) : (
+                  <Image
+                    src={e.image}
+                    className="mt-[24px]"
+                    alt=""
+                    width={180}
+                    height={180}
+                  />
+                )}
+                <h2 className="mt-[24px] font-medium text-2xl lg:text-[32px] lg:leading-[44px]">
+                  {e.name}
+                </h2>
+                <p className="mt-[16px] text-sm lg:text-[24px] lg:leading-[33.6px]">
+                  {e.infor}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="grid">
+        <button className="bg-accent py-3 px-5 lg:px-11 lg:py-6 text-white rounded-[900px] text-sm lg:text-[24px] leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-14rem] hover:scale-110 duration-100">
+          Узнать точную стоимость вывода из спама услугу
+        </button>
+      </div>
     </div>
   );
 };

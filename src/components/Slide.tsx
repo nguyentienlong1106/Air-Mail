@@ -11,7 +11,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 
 const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
   return (
-    <div className="lg:mt-[140px] mt-[93px]">
+    <div className="lg:mt-[140px] mt-[60px]">
       <h2
         className={` ${styleText} text-2xl lg:text-[40px] leading-[56px] font-ubuntu mb-[24px] lg:mb-[48px]`}
       >

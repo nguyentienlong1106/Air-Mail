@@ -85,7 +85,7 @@ const Service = () => {
           </h3>
           <div className="grid lg:flex mt-[48px] gap-5 lg:gap-[59px]">
             <button className="bg-accent text-white  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
-              Смотреть услуги
+              <Link href="/service"> Смотреть услуги</Link>
             </button>
             <button className="border-accent border-solid border-2 py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] hover:scale-110 duration-100">
               Получить консультацию
@@ -101,7 +101,7 @@ const Service = () => {
         </div>
       </section>
       <section>
-        <h2 className="mt-[120px] mb-[48px] font-ubuntu text-3xl lg:text-[52px] text-center lg:text-left leading-[72px]">
+        <h2 className="mt-[120px] mb-[32px] lg:mb-[48px] font-ubuntu text-3xl lg:text-[52px] text-center lg:text-left leading-[72px]">
           Наши услуги
         </h2>
         <div className="grid grid-cols-2 gap-[24px]">
@@ -109,9 +109,9 @@ const Service = () => {
             <Link
               key={i}
               href={e.href}
-              className="col-span-1 relative w-full h-[410px] px-[32px] pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
+              className="col-span-1 relative w-full h-[200px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
             >
-              <h3 className="font-medium text-black text-[32px] leading-[45px]">
+              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px] w-[90%]">
                 {e.name}
               </h3>
 
@@ -119,7 +119,7 @@ const Service = () => {
                 <Image
                   src={e.img}
                   alt=""
-                  className="absolute bottom-[0rem] left-[0rem]"
+                  className="hidden lg:block absolute bottom-0 left-0"
                   width={300}
                   height={300}
                 />
@@ -127,15 +127,32 @@ const Service = () => {
                 <Image
                   src={e.img}
                   alt=""
-                  className="absolute bottom-[0rem] left-[0rem]"
+                  className=" hidden lg:block absolute bottom-0 left-0"
                   width={400}
                   height={400}
+                />
+              )}
+              {i === 2 ? (
+                <Image
+                  src={e.img}
+                  alt=""
+                  className="lg:hidden absolute bottom-0 left-0"
+                  width={70}
+                  height={70}
+                />
+              ) : (
+                <Image
+                  src={e.img}
+                  alt=""
+                  className=" lg:hidden absolute bottom-0 left-0"
+                  width={100}
+                  height={100}
                 />
               )}
               <Image
                 src="/Vector.png"
                 alt=""
-                className="absolute top-[2.5rem] right-[2rem] "
+                className="absolute lg:top-[2.5rem] top-2 right-2 lg:right-[2rem] lg:scale-100 scale-50"
                 width={42}
                 height={42}
               />
@@ -144,7 +161,7 @@ const Service = () => {
         </div>
       </section>
       <section>
-        <h2 className="font-ubuntu text-[40px] leading-[56px] text-center mt-[64px] mb-[36px]">
+        <h2 className="font-ubuntu text-3xl lg:text-[40px] leading-[56px] text-center lg:mt-[64px] mt-[32px] mb-[16px] lg:mb-[36px]">
           Достанем вашу рассылку из спама
         </h2>
         <div className="grid grid-cols-3 gap-[24px]">
@@ -152,9 +169,9 @@ const Service = () => {
             <Link
               key={i}
               href={e.href}
-              className="col-span-1 relative w-full h-[410px] px-[32px] pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100 overflow-hidden"
+              className="col-span-1 relative w-full h-[200px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100 overflow-hidden"
             >
-              <h3 className="font-medium text-black text-[32px] leading-[45px]">
+              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px]">
                 {e.name}
               </h3>
               {i === 0 ? (
@@ -178,7 +195,7 @@ const Service = () => {
               <Image
                 src="/Vector.png"
                 alt=""
-                className="absolute top-[2.5rem] right-[2rem]"
+                className="absolute lg:top-[2.5rem] top-2 right-2 lg:right-[2rem] lg:scale-100 scale-50"
                 width={42}
                 height={42}
               />
@@ -186,7 +203,7 @@ const Service = () => {
           ))}
         </div>
       </section>
-      <section className="pb-[100px]">
+      <section className="lg:pb-[100px]">
         <h2 className="font-ubuntu text-[40px] leading-[56px] text-center mt-[64px] mb-[36px]">
           Настроим индивидуально под ваш сервис
         </h2>
@@ -195,24 +212,31 @@ const Service = () => {
             <Link
               key={i}
               href={e.href}
-              className="col-span-1 relative w-full h-[410px] px-[32px] pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
+              className="col-span-1 relative w-full h-[300px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
             >
-              <h3 className="font-medium text-black text-[32px] leading-[45px] w-[368px]">
+              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px] lg:w-[368px] w-[80%]">
                 {e.name}
               </h3>
 
               <Image
                 src={e.img}
                 alt=""
-                className="absolute bottom-[0rem] left-[0rem]"
+                className="hidden lg:block absolute bottom-[0rem] left-[0rem]"
                 width={280}
                 height={280}
+              />
+              <Image
+                src={e.img}
+                alt=""
+                className="lg:hidden absolute bottom-[0rem] left-[0rem]"
+                width={100}
+                height={100}
               />
 
               <Image
                 src="/Vector.png"
                 alt=""
-                className="absolute top-[2.5rem] right-[2rem]"
+                className="absolute lg:top-[2.5rem] top-2 right-2 lg:right-[2rem] lg:scale-100 scale-50"
                 width={42}
                 height={42}
               />
@@ -224,24 +248,31 @@ const Service = () => {
             <Link
               key={i}
               href={e.href}
-              className="col-span-1 relative w-full h-[410px] px-[32px] pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
+              className="col-span-1 relative w-full h-[300px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
             >
-              <h3 className="font-medium text-black text-[32px] leading-[45px]">
+              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px] w-[80%] ">
                 {e.name}
               </h3>
 
               <Image
                 src={e.img}
                 alt=""
-                className="absolute bottom-[0rem] left-[0rem]"
+                className="hidden lg:block absolute bottom-[0rem] left-[0rem]"
                 width={280}
                 height={280}
+              />
+              <Image
+                src={e.img}
+                alt=""
+                className="lg:hidden absolute bottom-[0rem] left-[0rem]"
+                width={100}
+                height={100}
               />
 
               <Image
                 src="/Vector.png"
                 alt=""
-                className="absolute bottom-[2.5rem] right-[2rem]"
+                className="absolute lg:top-[2.5rem] top-2 right-2 lg:right-[2rem] lg:scale-100 scale-50"
                 width={42}
                 height={42}
               />

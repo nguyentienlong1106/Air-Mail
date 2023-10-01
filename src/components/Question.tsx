@@ -38,7 +38,7 @@ const Question = () => {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex gap-10 justify-between items-center w-full sm:w-[640px] md:w-[786px] lg:w-[1024px] xl:w-[1280px] h-[80px] lg:h-[140px]">
-                  <span className="text-lg lg:text-[32px] leading-[44.8px] text-left">
+                  <span className="text-sm lg:text-[32px] leading-[44.8px] text-left">
                     {e.question}
                   </span>
                   <SlArrowDown
@@ -55,7 +55,7 @@ const Question = () => {
                   leaveFrom="transform scale-100 opacity-100"
                   leaveTo="transform scale-95 opacity-0"
                 >
-                  <Disclosure.Panel className="text-lg lg:text-[24px] leading-[33.6px] lg:w-[1034px] mb-[36px] ml-[24px] border-l-[1px] pl-[20px]  border-solid border-[#C9C9C9]">
+                  <Disclosure.Panel className="text-sm lg:text-[24px] leading-[33.6px] lg:w-[1034px] mb-[36px] ml-[24px] border-l-[1px] pl-[20px]  border-solid border-[#C9C9C9]">
                     {e.answer}
                   </Disclosure.Panel>
                 </Transition>

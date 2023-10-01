@@ -20,10 +20,10 @@ const Seo_infor = () => {
             <Image alt="" src="/ER_Photo.png" width={167} height={167} />
           </div>
           <div className="col-span-1 ">
-            <span className=" bg-accent py-3 px-2 rounded-[50px] text-2xl font-ubuntu leading-[56px] text-white">
+            <span className=" bg-accent py-3 px-2 rounded-[50px] text-lg font-ubuntu leading-[56px] text-white">
               Евгений Румянцев{" "}
             </span>
-            <span className=" bg-accent py-3 px-10 rounded-[50px] text-2xl font-ubuntu leading-[50px] italic sepia-[0.2] text-white">
+            <span className=" bg-accent py-3 px-10 rounded-[50px] text-lg font-ubuntu leading-[50px] italic sepia-[0.2] text-white">
               CEO{" "}
             </span>
           </div>
