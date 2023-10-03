@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useSwiper } from "swiper/react";
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import Link from "next/link";
 
 const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
   return (
@@ -40,17 +41,19 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
                   «спам» и не доходят до пользователей
                 </p>
                 <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
-                  Подробнее
+                  <Link href="/service/email/Mail">Подробнее</Link>
                 </button>
-                <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
-                  <Image
-                    src="/Vector_white.png"
-                    alt=""
-                    width={16}
-                    height={16}
-                    priority={true}
-                  />
-                </button>
+                <Link href="/service/email/Mail">
+                  <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
+                    <Image
+                      src="/Vector_white.png"
+                      alt=""
+                      width={16}
+                      height={16}
+                      priority={true}
+                    />
+                  </button>
+                </Link>
               </div>
               <div className="hidden lg:block lg:col-span-2">
                 <Image
@@ -78,17 +81,19 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
                   «спам» и не доходят до пользователей
                 </p>
                 <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
-                  Подробнее
+                  <Link href="/service/email/Mail">Подробнее</Link>
                 </button>
-                <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
-                  <Image
-                    src="/Vector_white.png"
-                    alt=""
-                    width={16}
-                    height={16}
-                    priority={true}
-                  />
-                </button>
+                <Link href="/service/email/Mail">
+                  <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
+                    <Image
+                      src="/Vector_white.png"
+                      alt=""
+                      width={16}
+                      height={16}
+                      priority={true}
+                    />
+                  </button>
+                </Link>
               </div>
               <div className="hidden lg:block lg:col-span-2">
                 <Image
@@ -116,17 +121,19 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
                   «спам» и не доходят до пользователей
                 </p>
                 <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
-                  Подробнее
+                  <Link href="/service/email/Mail">Подробнее</Link>
                 </button>
-                <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
-                  <Image
-                    src="/Vector_white.png"
-                    alt=""
-                    width={16}
-                    height={16}
-                    priority={true}
-                  />
-                </button>
+                <Link href="/service/email/Mail">
+                  <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
+                    <Image
+                      src="/Vector_white.png"
+                      alt=""
+                      width={16}
+                      height={16}
+                      priority={true}
+                    />
+                  </button>
+                </Link>
               </div>
               <div className="hidden lg:block lg:col-span-2">
                 <Image

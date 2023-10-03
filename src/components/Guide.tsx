@@ -47,7 +47,7 @@ const Guide = () => {
         {Data.map((e, i) => (
           <div
             key={i}
-            className="col-span-1 h-[300px] lg:h-[526px] lg:w-auto rounded-[30px] bg-accent px-[20px] py-[20px] relative text-white"
+            className="col-span-1 h-[300px] lg:h-[526px] lg:w-auto rounded-[30px] bg-accent p-20 relative text-white"
           >
             <Image
               src="/angle.svg"
@@ -81,7 +81,7 @@ const Guide = () => {
             <SwiperSlide key={i}>
               <div
                 key={i}
-                className=" h-[300px] rounded-[30px] bg-accent px-[20px] py-[20px] relative text-white mt-[24px]"
+                className=" h-[300px] rounded-[30px] bg-accent p-10 relative text-white mt-[24px]"
               >
                 <Image
                   src="/angle.svg"
@@ -91,7 +91,7 @@ const Guide = () => {
                   height={95.54}
                 />
 
-                <h2 className=" font-ubuntu font-medium text-lg  h-[130px]">
+                <h2 className=" font-ubuntu font-medium text-lg mb-[20px]">
                   {e.new}
                 </h2>
                 <p className="text-[#D8D8D8] text-sm font-medium ">{e.desc}</p>

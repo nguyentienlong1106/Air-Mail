@@ -7,10 +7,11 @@ const Header = () => {
   return (
     <header className="container mx-auto xl:mx-[80px] mt-[24px] xl:mt-[48px]  grid grid-cols-2 justify-center">
       <div className="col-span-1 flex ">
-        <Link href="/" className="flex">
-          <span className="font-tinos text-[40px] leading-[52px] ">AIR</span>
+        <Link href="/" className="flex items-center">
+          <span className="font-tinos text-[40px] lg:leading-[52px] ">AIR</span>
           <Image src="/Group.png" alt="" width={44} height={44} />
-          <span className="font-tinos text-[40px] leading-[52px]  ml-1">
+
+          <span className="font-tinos text-[40px] lg:leading-[52px]  ml-1">
             MAIL
           </span>
         </Link>
@@ -31,7 +32,7 @@ const Header = () => {
           <Image src="/Whats App.png" alt="" width={44} height={44} />
         </Link>
         <span className="text-[18px] leading-[23.4px] mr-[48px] text-[#707070] ">
-          +7 999 999-99-99
+          +7 921 956-55-48
         </span>
         <ThemeChanger />
         <Language />

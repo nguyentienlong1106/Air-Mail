@@ -17,12 +17,12 @@ const page = () => {
       <section>
         <div className="grid justify-items-center mt-[116px] relative">
           <h1 className="font-ubuntu text-3xl lg:text-[52px] lg:leading-[72.8px] text-center ">
-            Достанем вашу рассылку из спама Mail.ru
+            Достанем вашу рассылку из спама Yandex.ru
           </h1>
           <h3 className="font-medium text-lg lg:text-[26px] text-center leading-[36.4px] text-description_light dark:text-description_dark lg:w-[668px] mt-[48px]">
             Разберемся с вашей проблемой, выполним анализ, проведем переговоры с
             почтовыми провайдерами и устраним причины попадания в спам в
-            электронной почте Mail Ru.
+            электронной почте Yandex Ru.
           </h3>
           <div className="grid lg:flex gap-5 lg:gap-[59px] mt-[84px]">
             <button className="bg-accent text-white py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">

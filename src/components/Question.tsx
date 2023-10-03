@@ -38,7 +38,7 @@ const Question = () => {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex gap-10 justify-between items-center w-full sm:w-[640px] md:w-[786px] lg:w-[1024px] xl:w-[1280px] h-[80px] lg:h-[140px]">
-                  <span className="text-sm lg:text-[32px] leading-[44.8px] text-left">
+                  <span className="text-sm lg:text-[32px] lg:leading-[44.8px] text-left">
                     {e.question}
                   </span>
                   <SlArrowDown

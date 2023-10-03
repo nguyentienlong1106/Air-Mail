@@ -33,12 +33,12 @@ const data2 = [
   {
     name: "Yandex.ru",
     img: "/mail2.png",
-    href: "/service/email/Mail",
+    href: "/service/email/Yandex",
   },
   {
     name: "Gmail.com",
     img: "/mail3.png",
-    href: "/service/email/Mail",
+    href: "/service/email/Gmail",
   },
 ];
 const data3 = [
@@ -85,7 +85,7 @@ const Service = () => {
           </h3>
           <div className="grid lg:flex mt-[48px] gap-5 lg:gap-[59px]">
             <button className="bg-accent text-white  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
-              <Link href="/service"> Смотреть услуги</Link>
+              <Link href="/service"> Заказать услугу</Link>
             </button>
             <button className="border-accent border-solid border-2 py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] hover:scale-110 duration-100">
               Получить консультацию
@@ -101,7 +101,7 @@ const Service = () => {
         </div>
       </section>
       <section>
-        <h2 className="mt-[120px] mb-[32px] lg:mb-[48px] font-ubuntu text-3xl lg:text-[52px] text-center lg:text-left leading-[72px]">
+        <h2 className="mt-[120px] mb-[32px] lg:mb-[48px] font-ubuntu text-2xl lg:text-[52px] text-center lg:text-left leading-[72px]">
           Наши услуги
         </h2>
         <div className="grid grid-cols-2 gap-[24px]">
@@ -111,7 +111,7 @@ const Service = () => {
               href={e.href}
               className="col-span-1 relative w-full h-[200px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
             >
-              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px] w-[90%]">
+              <h3 className="font-medium text-black text-lg lg:text-[32px] leading-[45px] w-[90%]">
                 {e.name}
               </h3>
 
@@ -161,7 +161,7 @@ const Service = () => {
         </div>
       </section>
       <section>
-        <h2 className="font-ubuntu text-3xl lg:text-[40px] leading-[56px] text-center lg:mt-[64px] mt-[32px] mb-[16px] lg:mb-[36px]">
+        <h2 className="font-ubuntu text-2xl lg:text-[40px] leading-[56px] text-center lg:mt-[64px] mt-[32px] mb-[16px] lg:mb-[36px]">
           Достанем вашу рассылку из спама
         </h2>
         <div className="grid grid-cols-3 gap-[24px]">
@@ -171,7 +171,7 @@ const Service = () => {
               href={e.href}
               className="col-span-1 relative w-full h-[200px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100 overflow-hidden"
             >
-              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px]">
+              <h3 className="font-medium text-black text-lg lg:text-[32px] leading-[45px]">
                 {e.name}
               </h3>
               {i === 0 ? (
@@ -204,7 +204,7 @@ const Service = () => {
         </div>
       </section>
       <section className="lg:pb-[100px]">
-        <h2 className="font-ubuntu text-[40px] leading-[56px] text-center mt-[64px] mb-[36px]">
+        <h2 className="font-ubuntu text-2xl lg:text-[40px] leading-[56px] text-center mt-[64px] mb-[36px]">
           Настроим индивидуально под ваш сервис
         </h2>
         <div className="grid grid-cols-2 gap-[24px]">
@@ -214,7 +214,7 @@ const Service = () => {
               href={e.href}
               className="col-span-1 relative w-full h-[300px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
             >
-              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px] lg:w-[368px] w-[80%]">
+              <h3 className="font-medium text-black text-lg lg:text-[32px] leading-[45px] lg:w-[368px] w-[80%]">
                 {e.name}
               </h3>
 
@@ -250,7 +250,7 @@ const Service = () => {
               href={e.href}
               className="col-span-1 relative w-full h-[300px] lg:h-[410px] px-[10px] lg:px-[32px] pt-[10px] lg:pt-[40px] bg-[#E8F1FF] dark:bg-[#C6DDFF] rounded-[20px] hover:translate-x-3 duration-100"
             >
-              <h3 className="font-medium text-black text-xl lg:text-[32px] leading-[45px] w-[80%] ">
+              <h3 className="font-medium text-black text-lg lg:text-[32px] leading-[45px] w-[80%] ">
                 {e.name}
               </h3>
 

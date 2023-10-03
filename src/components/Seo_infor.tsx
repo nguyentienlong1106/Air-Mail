@@ -3,10 +3,7 @@ import Link from "next/link";
 
 const Seo_infor = () => {
   return (
-    <div
-      id="contact"
-      className=" lg:bg-gradient-to-br lg:hover:bg-gradient-to-r lg:from-[#0019FF] lg:to-[#7481f8] lg:mt-[100px] lg:h-[775px] rounded-[32px] grid lg:grid-cols-5 gap-[24px] z-10 relative"
-    >
+    <div className=" lg:bg-gradient-to-br lg:hover:bg-gradient-to-r lg:from-[#0019FF] lg:to-[#7481f8] lg:mt-[100px] lg:h-[775px] rounded-[32px] grid lg:grid-cols-5 gap-[24px] z-10 relative">
       <div className="lg:col-span-2 lg:mt-[56px] lg:ml-[55px] relative lg:text-white ">
         <h2 className="font-ubuntu text-2xl lg:text-[40px] leading-[56px] mb-[16px] lg:mb-[32px]">
           Свяжитесь с нами любым удобным способом

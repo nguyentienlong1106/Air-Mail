@@ -1,6 +1,6 @@
 const Form = () => {
   return (
-    <div className="grid lg:grid-cols-5 mt-[40px] lg:mt-[100px]">
+    <div id="contact" className="grid lg:grid-cols-5 mt-[40px] lg:mt-[100px]">
       <div className="lg:col-span-3 lg:w-[738px]">
         <h2 className="font-ubuntu text-2xl lg:text-[40px] lg:leading-[56px] text-center lg:text-left">
           Получите бесплатный аудит ваших рассылок и репутации домена,

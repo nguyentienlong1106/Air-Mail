@@ -41,7 +41,7 @@ const Data = [
 const Step = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="mt-[48px] lg:mt-[156px] lg:mb-[162px]">
+    <div className="mt-[48px] lg:mt-[156px] lg:mb-[162px] relative">
       <div className="grid justify-center">
         <h2 className="font-ubuntu font-bold text-3xl lg:text-[40px] leading-[56px] text-center">
           Сделаем всё под ключ
@@ -98,7 +98,7 @@ const Step = () => {
       >
         {Data.map((e, i) => (
           <SwiperSlide key={i}>
-            <div className="lg:hidden h-[450px] w-[236px]">
+            <div className="lg:hidden h-[600px] w-[236px]">
               {" "}
               <p
                 className={`text-sm mt-[12px] font-medium text-white bg-accent py-2 w-[80px] rounded-[50px] text-center`}
@@ -129,7 +129,7 @@ const Step = () => {
         ))}
       </Swiper>
       <div className="grid">
-        <button className="bg-accent py-3 lg:px-11 lg:py-5 text-white rounded-[900px] text-lg lg:text-[24px] leading-[31px] mt-[56px] lg:absolute lg:right-16 hover:scale-110 duration-100">
+        <button className="bg-accent py-3 lg:px-11 lg:py-5 text-white rounded-[900px] text-sm lg:text-[24px] lg:leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-10rem] hover:scale-110 duration-100">
           Узнать точную стоимость вывода из спама услугу
         </button>
       </div>

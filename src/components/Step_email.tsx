@@ -38,7 +38,7 @@ const Data = [
 const Step_email = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="mt-[156px] mb-[300px] relative">
+    <div className="lg:mt-[156px] mt-[48px] lg:mb-[300px] relative">
       <div className="grid justify-center">
         <h2 className="font-ubuntu font-bold text-2xl lg:text-[40px] leading-[56px] text-center">
           Кому это подходит
@@ -90,7 +90,7 @@ const Step_email = () => {
         >
           {Data.map((e, i) => (
             <SwiperSlide key={i}>
-              <div key={i} className="col-span-1 h-[550px] w-[236px]">
+              <div key={i} className="lg:col-span-1 h-[600px] w-[236px]">
                 {theme === "dark" ? (
                   <Image
                     src={e.imageD}
@@ -108,7 +108,7 @@ const Step_email = () => {
                     height={180}
                   />
                 )}
-                <h2 className="mt-[24px] font-medium text-2xl lg:text-[32px] lg:leading-[44px]">
+                <h2 className="mt-[24px] font-medium text-xl lg:text-[32px] lg:leading-[44px]">
                   {e.name}
                 </h2>
                 <p className="mt-[16px] text-sm lg:text-[24px] lg:leading-[33.6px]">
@@ -120,7 +120,7 @@ const Step_email = () => {
         </Swiper>
       </div>
       <div className="grid">
-        <button className="bg-accent py-3 px-5 lg:px-11 lg:py-6 text-white rounded-[900px] text-sm lg:text-[24px] leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-14rem] hover:scale-110 duration-100">
+        <button className="bg-accent py-3 lg:px-11 lg:py-5 text-white rounded-[900px] text-sm lg:text-[24px] lg:leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-14rem] hover:scale-110 duration-100">
           Узнать точную стоимость вывода из спама услугу
         </button>
       </div>

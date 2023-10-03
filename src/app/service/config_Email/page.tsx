@@ -14,7 +14,7 @@ const page = () => {
   return (
     <div>
       <div className="grid justify-items-center mt-[116px] relative">
-        <h1 className="font-ubuntu text-2xl lg:text-[52px] lg:leading-[72.8px] text-center ">
+        <h1 className="font-ubuntu text-3xl lg:text-[52px] lg:leading-[72.8px] text-center ">
           Настройка серверов Email рассылки
         </h1>
         <h3 className="font-medium text-lg lg:text-[26px] text-center leading-[36.4px] text-description_light dark:text-description_dark lg:w-[706px] mt-[32px]">
