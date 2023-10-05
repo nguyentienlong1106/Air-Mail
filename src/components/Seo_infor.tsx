@@ -32,7 +32,7 @@ const Seo_infor = () => {
           </div>
           <div className="flex gap-5">
             <Link href="/">
-              <Image alt="" src="/tGC.png" width={40} height={40} />
+              <Image alt="" src="/Teleicon.png" width={40} height={40} />
             </Link>
             <Link href="/">
               <Image alt="" src="/WSC.png" width={40} height={40} />

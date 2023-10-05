@@ -90,7 +90,7 @@ const Step_email = () => {
         >
           {Data.map((e, i) => (
             <SwiperSlide key={i}>
-              <div key={i} className="lg:col-span-1 h-[650px] w-[236px]">
+              <div key={i} className="lg:col-span-1 h-auto pb-10 w-[236px]">
                 {theme === "dark" ? (
                   <Image
                     src={e.imageD}

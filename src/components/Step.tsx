@@ -98,7 +98,7 @@ const Step = () => {
       >
         {Data.map((e, i) => (
           <SwiperSlide key={i}>
-            <div className="lg:hidden h-[600px] w-[236px]">
+            <div className="lg:hidden h-auto w-[236px] pb-10">
               {" "}
               <p
                 className={`text-sm mt-[12px] font-medium text-white bg-accent py-2 w-[80px] rounded-[50px] text-center`}

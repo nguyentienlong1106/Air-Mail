@@ -8,7 +8,10 @@ const Footer = () => {
       <div className="container mx-auto px-3">
         <div className=" grid lg:grid-cols-3 xl:mx-[80px] pt-[30px] pb-[39px] lg:gap-[50px] gap-5">
           <div className="lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 h-[56px] text-[18px] leading-[23px]">
-            <Link href="/" className="flex items-center scale-75 lg:scale-100">
+            <Link
+              href="/"
+              className="flex items-center scale-75 -ml-8 lg:ml-0 lg:scale-100"
+            >
               <span className="font-tinos text-[40px] lg:leading-[52px] ">
                 AIR
               </span>

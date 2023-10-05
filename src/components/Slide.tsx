@@ -102,7 +102,7 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
             >
               <div className="grid lg:grid-cols-5 z-10 relative">
                 <div className="lg:col-span-3 mt-[32px] lg:mt-[51px] mx-[28px] lg:ml-[94px]">
-                  <h2 className="font-ubuntu text-2xl lg:text-[40px] leading-[56px] lg:w-[400px] text-white lg:text-current">
+                  <h2 className="font-ubuntu text-2xl lg:text-[40px] lg:leading-[56px] lg:w-[400px] text-white lg:text-current">
                     {e.title}
                   </h2>
                   <p className="font-medium text-lg lg:text-[20px] leading-[28px] mt-[24px] lg:w-[500px] text-[#D8D8D8] lg:text-description_dark">
@@ -111,17 +111,6 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
                   <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">
                     <Link href={e.href}>Подробнее</Link>
                   </button>
-                  <Link href={e.href}>
-                    <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-[-14rem] right-[2.5rem]">
-                      <Image
-                        src="/Vector_white.png"
-                        alt=""
-                        width={16}
-                        height={16}
-                        priority={true}
-                      />
-                    </button>
-                  </Link>
                 </div>
                 <div className="hidden lg:block lg:col-span-2">
                   <Image
@@ -135,7 +124,17 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
                 </div>
               </div>
             </div>
-            <div className="lg:hidden absolute inset-0 bg-black opacity-20 rounded-[40px] m-2"></div>
+            <Link href={e.href}>
+              <button className="lg:hidden absolute bg-accent text-white p-5 rounded-[900px] bottom-8 right-8">
+                <Image
+                  src="/Vector_white.png"
+                  alt=""
+                  width={16}
+                  height={16}
+                  priority={true}
+                />
+              </button>
+            </Link>
           </SwiperSlide>
         ))}
 
