@@ -15,6 +15,7 @@ import Result from "./Result";
 import Text from "./Text";
 import Progress from "./Progress";
 import Step_email from "./Step_email";
+import NavBar from "./NavBar";
 
 export {
   Guide,
@@ -34,4 +35,5 @@ export {
   Text,
   Progress,
   Step_email,
+  NavBar,
 };

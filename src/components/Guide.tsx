@@ -81,7 +81,7 @@ const Guide = () => {
             <SwiperSlide key={i}>
               <div
                 key={i}
-                className=" h-[300px] rounded-[30px] bg-accent p-10 relative text-white mt-[24px]"
+                className=" h-[350px] rounded-[30px] bg-accent p-8 relative text-white mt-[24px]"
               >
                 <Image
                   src="/angle.svg"

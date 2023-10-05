@@ -11,7 +11,7 @@ const data1 = [
   {
     name: "Поможем избежать спама",
     img: "/link2.png",
-    href: "service/blockSpam",
+    href: "/service/blockSpam",
   },
   {
     name: "Настройка домена для рассылок",
@@ -50,7 +50,7 @@ const data3 = [
   {
     name: "Настройка доменной/корпоративной почты",
     img: "/2.png",
-    href: "/",
+    href: "/service/config_dmarc",
   },
 ];
 const data4 = [

@@ -37,7 +37,7 @@ const page = () => {
           />
         </div>
       </div>
-      <div className="bg-[#E8F1FF] dark:bg-[#C6DDFF] lg:h-[390px] h-[800px] mt-[140px] rounded-[30px] text-black z-10 relative">
+      <div className="bg-[#E8F1FF] dark:bg-[#C6DDFF] pb-5 h-auto mt-[140px] rounded-[30px] text-black z-10 relative">
         <div className="p-[20px] lg:py-[56px] lg:px-[77px] grid justify-items-center">
           <h2 className="font-ubuntu font-bold text-2xl lg:text-[40px] leading-[56px] text-accent ">
             Что мы предлагаем:

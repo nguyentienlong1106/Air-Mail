@@ -38,7 +38,7 @@ const page = () => {
           />
         </div>
       </div>
-      <div className="bg-[#E8F1FF] dark:bg-[#C6DDFF] h-[900px] lg:h-[641px] mt-[140px] rounded-[30px] text-black relative z-10">
+      <div className="bg-[#E8F1FF] dark:bg-[#C6DDFF] pb-5 h-auto mt-[140px] rounded-[30px] text-black relative z-10">
         <div className="p-[20px] lg:py-[56px] lg:px-[77px] grid justify-items-center">
           <h2 className="font-ubuntu font-bold text-2xl lg:text-[40px] leading-[56px] text-accent ">
             Что такое SMTP?
