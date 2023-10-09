@@ -21,7 +21,7 @@ const NavBar = () => {
     };
   }, [navbar]);
   return (
-    <div className="relative z-50">
+    <div className="relative container z-30">
       <button className="p-2 focus:border" onClick={() => setNavbar(!navbar)}>
         {navbar ? (
           <AiOutlineClose className="w-[32px] h-[32px]" />

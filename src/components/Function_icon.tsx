@@ -7,10 +7,10 @@ const Function_icon = () => {
   const { theme, setTheme } = useTheme();
   return (
     <div className="lg:mt-[100px] mt-[60px]">
-      <h2 className="font-ubuntu font-bold text-3xl lg:text-[40px] leading-[56px]">
+      <h2 className="font-ubuntu font-bold text-3xl lg:text-[40px] lg:leading-[56px]">
         Если вы хотите
       </h2>
-      <p className="text-xl lg:text-[32px] leading-[44.8px] lg:w-[995px] mt-[16px]">
+      <p className="text-xl lg:text-[32px] lg:leading-[44.8px] lg:w-[995px] mt-[16px]">
         Повысить эффективность e-mail маркетинга и перестать терять деньги, а
         также:
       </p>
@@ -22,10 +22,10 @@ const Function_icon = () => {
         )}
 
         <div className="lg:w-[737px]">
-          <h3 className="font-medium text-xl lg:text-[32px] leading-[44.8px]">
+          <h3 className="font-medium text-xl lg:text-[32px] lg:leading-[44.8px]">
             Добиться доставляемости писем до 99.9%
           </h3>
-          <p className="text-sm lg:text-[24px] leading-[33.6px] text-description_dark mt-[16px] text-justify">
+          <p className="text-sm lg:text-[24px] lg:lg:leading-[33.6px] text-description_dark mt-[16px] text-justify">
             Чтобы все сообщения, которые вы отправляете доходили до клиентов,
             открывались на всех устройствах и работали все внутренние ссылки
           </p>
@@ -39,11 +39,11 @@ const Function_icon = () => {
         )}
 
         <div className="w-[737px]">
-          <h3 className="font-medium text-xl lg:text-[32px] leading-[44.8px]">
+          <h3 className="font-medium text-xl lg:text-[32px] lg:leading-[44.8px]">
             Повысить эффективность рекламы и выжимать из клиентской базы больше
             денег
           </h3>
-          <p className="text-sm lg:text-[24px] leading-[33.6px] text-description_dark mt-[16px] text-justify">
+          <p className="text-sm lg:text-[24px] lg:lg:leading-[33.6px] text-description_dark mt-[16px] text-justify">
             Если вы тратите деньги на рекламу, но после совершения целевого
             действия клиент не получает обратной связи, вы просто выливаете
             деньги в трубу
@@ -58,10 +58,10 @@ const Function_icon = () => {
         )}
 
         <div className="w-[737px]">
-          <h3 className="font-medium text-xl lg:text-[32px] leading-[44.8px]">
+          <h3 className="font-medium text-xl lg:text-[32px] lg:leading-[44.8px]">
             Актуализировать базу адресов, в которой будут только целевые адреса
           </h3>
-          <p className="text-sm lg:text-[24px] leading-[33.6px] text-description_dark mt-[16px] text-justify">
+          <p className="text-sm lg:text-[24px] lg:lg:leading-[33.6px] text-description_dark mt-[16px] text-justify">
             Когда дело касается рекламы, иметь актуализированную базу адресов с
             целевой аудиторией - это ключ к успеху. Иначе все ваши деньги,
             вложенные в рекламу, пропадают впустую.

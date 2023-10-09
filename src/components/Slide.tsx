@@ -78,9 +78,9 @@ const Data = [
 
 const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
   return (
-    <div className="lg:mt-[140px] mt-[60px]">
+    <div className="lg:mt-[140px] mt-[60px] mx-[-16px]">
       <h2
-        className={` ${styleText} text-2xl lg:text-[40px] leading-[56px] font-ubuntu mb-[24px] lg:mb-[48px]`}
+        className={` ${styleText} text-2xl lg:text-[40px] leading-[56px] font-ubuntu mb-[24px] lg:mb-[48px] hidden lg:block`}
       >
         {title}
       </h2>
@@ -96,16 +96,26 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
         speed={2000}
       >
         {Data.map((e, i) => (
-          <SwiperSlide key={i} className="relative p-2">
+          <SwiperSlide key={i} className="relative p-4">
             <div
               className={`relative w-full lg:w-[1064px] h-[436px] lg:border-[3px] lg:border-solid lg:border-accent rounded-[30px] overflow-hidden ${e.bg_img} bg-no-repeat bg-cover bg-center lg:bg-none`}
             >
               <div className="grid lg:grid-cols-5 z-10 relative">
-                <div className="lg:col-span-3 mt-[32px] lg:mt-[51px] mx-[28px] lg:ml-[94px]">
-                  <h2 className="font-ubuntu text-2xl lg:text-[40px] lg:leading-[56px] lg:w-[400px] text-white lg:text-current">
+                <div
+                  itemScope
+                  itemType="https://schema.org/CreativeWork"
+                  className="lg:col-span-3 mt-[32px] lg:mt-[51px] mx-[28px] lg:ml-[94px]"
+                >
+                  <h2
+                    itemProp="offers"
+                    className="font-ubuntu text-2xl lg:text-[40px] lg:leading-[56px] lg:w-[400px] text-white lg:text-current"
+                  >
                     {e.title}
                   </h2>
-                  <p className="font-medium text-lg lg:text-[20px] leading-[28px] mt-[24px] lg:w-[500px] text-[#D8D8D8] lg:text-description_dark">
+                  <p
+                    itemProp="usageInfo"
+                    className="font-medium text-lg lg:text-[20px] lg:leading-[28px] mt-[24px] lg:w-[500px] text-[#D8D8D8] lg:text-description_dark"
+                  >
                     {e.desc}
                   </p>
                   <button className="hidden lg:block bg-accent text-white py-[20px] rounded-[900px] text-[24px] leading-[31px] w-[452px] mt-[48px]">

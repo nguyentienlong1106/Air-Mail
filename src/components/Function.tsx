@@ -9,7 +9,7 @@ const Function = () => {
         </h2>
         <div className="flex items-center gap-[35px] mt-[27px]">
           <Image src="/mouse.png" alt="" width={52} height={52} />
-          <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+          <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
             Услуга настройки ESP (Email Service Provider) предоставляет клиентам
             возможность оптимизировать работу с почтовым сервисом, используемым
             для отправки электронных рассылок.
@@ -17,7 +17,7 @@ const Function = () => {
         </div>
         <div className="flex items-center gap-[35px] mt-[36px]">
           <Image src="/mouse.png" alt="" width={52} height={52} />
-          <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+          <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
             Специалисты помогут настроить ESP в соответствии с потребностями
             клиента, установить необходимые настройки безопасности, настроить
             автоматические ответы и уведомления, а также настроить отчетность и
@@ -28,7 +28,7 @@ const Function = () => {
         </div>
         <div className="flex items-center gap-[35px] mt-[36px]">
           <Image src="/mouse.png" alt="" width={52} height={52} />
-          <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+          <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
             В результате, вы получите оптимизированный и надежный инструмент для
             отправки электронных рассылок, который позволит вам достигать лучших
             результатов в маркетинговых кампаниях.

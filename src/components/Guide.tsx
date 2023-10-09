@@ -36,10 +36,10 @@ const Guide = () => {
       id="about_us"
       className="lg:mt-[140px] mt-[56px] lg:grid justify-items-center"
     >
-      <h2 className="font-ubuntu text-2xl lg:text-[40px] lg:leading-[56px] text-center w-auto lg:w-[814px]">
+      <h2 className="font-ubuntu text-xl lg:text-[40px] lg:leading-[56px] text-center w-auto lg:w-[814px]">
         Помогаем сократить потери и увеличить выручку от e-mail маркетинга
       </h2>
-      <p className="font-medium text-lg lg:text-[26px] leading-[36.4px] text-center mt-[16px] lg:mt-[32px] w-auto lg:w-[668px] text-description_dark">
+      <p className="font-medium text-sm lg:text-[26px] lg:leading-[36.4px] text-center mt-[16px] lg:mt-[32px] w-auto lg:w-[668px] text-description_dark">
         Находим слабые места, в которых вы теряете деньги и помогаем повысить
         эффективность вашего e-mail маркетинга
       </p>
@@ -60,7 +60,7 @@ const Guide = () => {
             <h2 className=" font-ubuntu font-medium text-lg lg:text-[32px] lg:leading-[44.8px] h-[130px]">
               {e.new}
             </h2>
-            <p className="text-[#D8D8D8] lg:mt-[94px] text-sm lg:text-[24px] lg:leading-[33.6px] font-medium ">
+            <p className="text-[#D8D8D8] lg:mt-[94px] text-sm lg:text-[24px] lg:lg:leading-[33.6px] font-medium ">
               {e.desc}
             </p>
           </div>

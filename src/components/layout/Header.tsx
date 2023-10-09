@@ -6,10 +6,12 @@ const Header = () => {
   return (
     <header className="container mx-auto xl:mx-[80px] mt-[24px] xl:mt-[48px] grid grid-cols-2 justify-center">
       <div className="col-span-1 flex ">
-        <Link href="/" className="flex items-center">
+        <Link
+          href="/"
+          className="flex items-center scale-75 -ml-8 lg:ml-0 lg:scale-100"
+        >
           <span className="font-tinos text-[40px] lg:leading-[52px] ">AIR</span>
           <Image src="/Group.png" alt="" width={44} height={44} />
-
           <span className="font-tinos text-[40px] lg:leading-[52px]  ml-1">
             MAIL
           </span>

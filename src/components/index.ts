@@ -16,6 +16,7 @@ import Text from "./Text";
 import Progress from "./Progress";
 import Step_email from "./Step_email";
 import NavBar from "./NavBar";
+import Rule_cookie from "./Rule_cookie";
 
 export {
   Guide,

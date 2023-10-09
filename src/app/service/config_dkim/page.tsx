@@ -25,7 +25,7 @@ const page = () => {
           <button className="bg-accent text-white py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
             Заказать услугу
           </button>
-          <button className="border-accent border-solid border-2  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] overflow-hidden z-10 bg-white dark:bg-black hover:scale-110 duration-100">
+          <button className="border-accent border-solid border-2  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] overflow-hidden z-10 bg-white dark:bg-black hover:scale-110 duration-100 px-2">
             Получить консультацию
           </button>
           <Image
@@ -44,14 +44,14 @@ const page = () => {
           </h2>
           <div className="flex items-center gap-[35px] mt-[27px]">
             <Image src="/mouse.png" alt="" width={52} height={52} />
-            <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+            <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
               Мы предоставляем услуги по настройке и внедрению этой технологии
               на серверах своих клиентов.
             </p>
           </div>
           <div className="flex items-center gap-[35px] mt-[36px]">
             <Image src="/mouse.png" alt="" width={52} height={52} />
-            <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+            <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
               Услуга включает в себя создание DNS-записей для указания правил
               проверки подлинности электронной почты и настройку механизмов
               отчетности о доставке и обработке писем.
@@ -59,7 +59,7 @@ const page = () => {
           </div>
           <div className="flex items-center gap-[35px] mt-[36px]">
             <Image src="/mouse.png" alt="" width={52} height={52} />
-            <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+            <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
               Также предоставляем услуги мониторинга и анализа электронной почты
               с помощью DKIM, чтобы обнаруживать и блокировать поддельные
               сообщения, повышая безопасность и репутацию организации.

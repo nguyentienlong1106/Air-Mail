@@ -26,7 +26,7 @@ const page = () => {
           <button className="bg-accent text-white py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
             Заказать услугу
           </button>
-          <button className="border-accent border-solid border-2  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] overflow-hidden z-10 bg-white dark:bg-black hover:scale-110 duration-100">
+          <button className="border-accent border-solid border-2  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] overflow-hidden z-10 bg-white dark:bg-black hover:scale-110 duration-100 px-2">
             Получить консультацию
           </button>
           <Image
@@ -46,14 +46,14 @@ const page = () => {
 
           <div className="flex items-center gap-[35px] mt-[36px]">
             <Image src="/mouse.png" alt="" width={52} height={52} />
-            <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+            <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
               Эта услуга, которая позволяет создавать красивые и
               профессиональные письма с помощью HTML-разметки.
             </p>
           </div>
           <div className="flex items-center gap-[35px] mt-[36px]">
             <Image src="/mouse.png" alt="" width={52} height={52} />
-            <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+            <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
               Веб-дизайнеры используют эту технологию для создания уникальных
               шаблонов писем, которые помогают привлечь внимание получателя и
               повысить эффективность рассылок. Верстка писем позволяет добавлять
@@ -63,7 +63,7 @@ const page = () => {
           </div>
           <div className="flex items-center gap-[35px] mt-[36px]">
             <Image src="/mouse.png" alt="" width={52} height={52} />
-            <p className="text-lg lg:text-[24px] lg:leading-[33.6px] text-justify">
+            <p className="text-lg lg:text-[24px] lg:lg:leading-[33.6px] text-justify">
               Эта услуга также помогает оптимизировать письма для мобильных
               устройств, что является особенно важным в наше время, когда
               большинство людей используют смартфоны и планшеты для чтения

@@ -65,7 +65,7 @@ const Progress = () => {
             <h3 className="text-lg lg:text-[32px] lg:leading-[44.8px] font-medium mb-[16px]">
               {e.name}
             </h3>
-            <p className="text-sm lg:text-[24px] lg:leading-[33.6px] text-description_light dark:text-description_dark lg:w-[738px]">
+            <p className="text-sm lg:text-[24px] lg:lg:leading-[33.6px] text-description_light dark:text-description_dark lg:w-[738px]">
               {e.desc}
             </p>
           </div>

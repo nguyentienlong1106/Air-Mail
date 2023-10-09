@@ -15,14 +15,14 @@ const Result = () => {
         </span>
       </div>
       <div className="grid lg:flex justify-between mt-[12px] gap-6 lg:gap-[91px]">
-        <p className="lg:w-[528px] text-lg lg:text-[26px] text-description_dark leading-[36.4px]">
+        <p className="lg:w-[528px] text-sm lg:text-[26px] text-description_dark lg:leading-[36.4px]">
           Ваши клиенты получают письма, читают их и выполняют целевые действия
         </p>
-        <div className="inline-grid">
-          <p className=" text-lg lg:text-[26px] text-description_dark leading-[36.4px]">
+        <div className="inline-grid gap-2">
+          <p className=" text-sm lg:text-[26px] text-description_dark lg:leading-[36.4px]">
             Отправлено писем: 109 000{" "}
           </p>{" "}
-          <p className=" text-lg lg:text-[26px] text-description_dark leading-[36.4px]">
+          <p className=" text-sm lg:text-[26px] text-description_dark lg:leading-[36.4px]">
             {" "}
             Доставлено писем: 107 549
           </p>

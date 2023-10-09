@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Language, ThemeChanger } from "..";
 
 const Footer = () => {
   return (
@@ -29,14 +28,36 @@ const Footer = () => {
               <span>Политика конфиденциальности</span>
             </div>
           </div>
-          <div className="lg:col-span-1 mt-[10px] text-sm lg:text-[18px] leading-[21.78px]">
-            <h2 className=" font-semibold leading-[33.6px]">Услуги</h2>
-            <p className="mt-[24px]">Настройка ESP</p>
-            <p className="mt-[20px]">Вытаскиваем из спама</p>
-            <p className="mt-[20px]">Верстка писем</p>
-            <p className="mt-[20px]">Настройка своих серверов рассылок SMTP</p>
-            <p className="mt-[20px]">Настройка DKIM / DMARC / SPF</p>
-            <p className="mt-[20px]">Добавление PTR-записи</p>
+          <div
+            itemScope
+            itemType="https://schema.org/CreativeWork"
+            className="lg:col-span-1 mt-[10px] text-sm lg:text-[18px] lg:leading-[21.78px]"
+          >
+            <h2 className=" font-semibold lg:leading-[33.6px]">
+              <Link href="/service">Услуги</Link>
+            </h2>
+            <p itemProp="offers" className="mt-[24px]">
+              <Link href="/service/email/Yandex">Настройка ESP</Link>
+            </p>
+            <p itemProp="offers" className="mt-[20px]">
+              <Link href="/service/conslusionSpam">Вытаскиваем из спама</Link>
+            </p>
+            <p itemProp="offers" className="mt-[20px]">
+              <Link href="/service/HTML_web">Верстка писем</Link>
+            </p>
+            <p itemProp="offers" className="mt-[20px]">
+              <Link href="/service/config_Email">
+                Настройка своих серверов рассылок SMTP
+              </Link>
+            </p>
+            <p itemProp="offers" className="mt-[20px]">
+              <Link href="/service/config_dkim">
+                Настройка DKIM / DMARC / SPF
+              </Link>
+            </p>
+            <p itemProp="offers" className="mt-[20px]">
+              <Link href="/service/authenticate">Добавление PTR-записи</Link>
+            </p>
           </div>
           <div className="lg:col-span-1 lg:ml-[100px] grid grid-cols-2 lg:grid-cols-1 justify-items-start">
             <div className="">
@@ -72,8 +93,6 @@ const Footer = () => {
           <button className="bg-accent px-10 py-3 rounded-[900px] text-[18px] leading-[18px] mr-[8px]">
             Оставить заявку
           </button>
-          <ThemeChanger />
-          <Language />
         </div>
       </div>
     </footer>

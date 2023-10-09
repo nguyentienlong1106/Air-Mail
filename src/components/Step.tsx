@@ -41,15 +41,15 @@ const Data = [
 const Step = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="mt-[48px] lg:mt-[156px] lg:mb-[162px] relative">
+    <div className="mt-[48px] lg:mt-[156px] lg:mb-[162px] mx-[-16px] lg:mx-0 relative">
       <div className="grid justify-center">
-        <h2 className="font-ubuntu font-bold text-3xl lg:text-[40px] leading-[56px] text-center">
+        <h2 className="font-ubuntu font-bold text-3xl lg:text-[40px] lg:leading-[56px] text-center">
           Сделаем всё под ключ
         </h2>{" "}
-        <h3 className="text-2xl lg:text-[32px] leading-[44.8px] text-center mt-[16px]">
+        <h3 className="text-2xl lg:text-[32px] lg:leading-[44.8px] text-center mt-[16px]">
           Весь процесс занимает 14-16 дней.
         </h3>{" "}
-        <p className="text-lg lg:text-[28px] leading-[36.4px] text-center lg:w-[542px] text-description_dark mt-[12px] px-3">
+        <p className="text-lg lg:text-[28px] lg:leading-[36.4px] text-center lg:w-[542px] text-description_dark mt-[12px] px-3">
           Точные сроки назовем после изучения ваших рассылок и ресурсов
         </p>{" "}
       </div>
@@ -82,13 +82,14 @@ const Step = () => {
             <h2 className="mt-[24px] font-medium text-[30px] leading-[42px]">
               {e.name}
             </h2>
-            <p className="mt-[16px] text-[24px] leading-[33.6px]">{e.infor}</p>
+            <p className="mt-[16px] text-[24px] lg:leading-[33.6px]">
+              {e.infor}
+            </p>
           </div>
         ))}
       </div>
       <Swiper
         slidesPerView={1.5}
-        spaceBetween={24}
         freeMode={true}
         pagination={{
           clickable: true,
@@ -129,7 +130,7 @@ const Step = () => {
         ))}
       </Swiper>
       <div className="grid">
-        <button className="bg-accent py-3 lg:px-11 lg:py-5 text-white rounded-[900px] text-sm lg:text-[24px] lg:leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-10rem] hover:scale-110 duration-100">
+        <button className="bg-accent py-3 lg:px-11 lg:py-5 text-white rounded-[900px] text-sm lg:text-[24px] lg:leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-10rem] hover:scale-110 duration-100 mx-[16px] lg:mx-0">
           Узнать точную стоимость вывода из спама услугу
         </button>
       </div>

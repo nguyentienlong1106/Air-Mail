@@ -38,15 +38,15 @@ const Data = [
 const Step_email = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="lg:mt-[156px] mt-[48px] lg:mb-[300px] relative">
+    <div className="lg:mt-[156px] mt-[48px] lg:mb-[300px] lg:mx-0 relative">
       <div className="grid justify-center">
-        <h2 className="font-ubuntu font-bold text-2xl lg:text-[40px] leading-[56px] text-center">
+        <h2 className="font-ubuntu font-bold text-2xl lg:text-[40px] lg:leading-[56px] text-center">
           Кому это подходит
         </h2>{" "}
-        <h3 className="text-lg lg:text-[32px] leading-[44.8px] text-center mt-[16px]">
+        <h3 className="text-lg lg:text-[32px] lg:leading-[44.8px] text-center mt-[16px]">
           Весь процесс занимает 14-16 дней.
         </h3>{" "}
-        <p className="text-lg lg:text-[28px] leading-[36.4px] text-center lg:w-[542px] text-description_dark mt-[12px]">
+        <p className="text-lg lg:text-[28px] lg:leading-[36.4px] text-center lg:w-[542px] text-description_dark mt-[12px]">
           Точные сроки назовем после изучения ваших рассылок и ресурсов
         </p>{" "}
       </div>
@@ -73,11 +73,13 @@ const Step_email = () => {
             <h2 className="mt-[24px] font-medium text-[32px] leading-[44px]">
               {e.name}
             </h2>
-            <p className="mt-[16px] text-[24px] leading-[33.6px]">{e.infor}</p>
+            <p className="mt-[16px] text-[24px] lg:leading-[33.6px]">
+              {e.infor}
+            </p>
           </div>
         ))}
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden mx-[-16px]">
         <Swiper
           slidesPerView={1.5}
           spaceBetween={24}
@@ -111,7 +113,7 @@ const Step_email = () => {
                 <h2 className="mt-[24px] font-medium text-xl lg:text-[32px] lg:leading-[44px]">
                   {e.name}
                 </h2>
-                <p className="mt-[16px] text-sm lg:text-[24px] lg:leading-[33.6px]">
+                <p className="mt-[16px] text-sm lg:text-[24px] lg:lg:leading-[33.6px]">
                   {e.infor}
                 </p>
               </div>
