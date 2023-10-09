@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
         <div className=" hidden lg:flex justify-end items-center gap-[24px] xl:mx-[80px] pb-[48px]">
           {" "}
-          <button className="bg-accent px-10 py-3 rounded-[900px] text-[18px] leading-[18px] mr-[8px]">
+          <button className="bg-accent px-10 py-3 rounded-[900px] text-sm lg:text-[18px] lg:leading-[18px] mr-[8px]">
             Оставить заявку
           </button>
         </div>

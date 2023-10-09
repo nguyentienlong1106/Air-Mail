@@ -17,19 +17,19 @@ const Form = () => {
         <input
           type="number"
           placeholder="Ваш номер телефона*"
-          className="lg:w-[85%] w-full focus:outline-none mt-[32px] lg:ml-[36px] pl-[32px] text-sm text-[20px] lg:leading-[28px] h-[76px] rounded-[20px] border-[1px] border-solid border-gray-400"
+          className="lg:w-[85%] w-full focus:outline-none mt-[32px] lg:ml-[36px] pl-[32px] text-sm lg:text-[20px] lg:leading-[28px] h-[76px] rounded-[20px] border-[1px] border-solid border-gray-400"
         />
         <input
           type="text"
           placeholder="Ваша почта*"
-          className="lg:w-[85%] w-full focus:outline-none lg:ml-[36px] pl-[32px] text-sm text-[20px] lg:leading-[28px] h-[76px] rounded-[20px] mt-[24px] border-[1px] border-solid border-gray-400"
+          className="lg:w-[85%] w-full focus:outline-none lg:ml-[36px] pl-[32px] text-sm lg:text-[20px] lg:leading-[28px] h-[76px] rounded-[20px] mt-[24px] border-[1px] border-solid border-gray-400"
         />
         <input
           type="text"
           placeholder="Корпоративный домен"
-          className="lg:w-[85%] w-full focus:outline-none lg:ml-[36px] pl-[32px] text-sm text-[20px] lg:leading-[28px] h-[76px] rounded-[20px] mt-[24px] border-[1px] border-solid border-gray-400"
+          className="lg:w-[85%] w-full focus:outline-none lg:ml-[36px] pl-[32px] text-sm lg:text-[20px] lg:leading-[28px] h-[76px] rounded-[20px] mt-[24px] border-[1px] border-solid border-gray-400"
         />
-        <button className=" bg-accent py-3 lg:py-[22px] rounded-[900px] text-lg lg:text-[24px] text-white leading-[31.2px] lg:w-[85%] w-full mt-[32px] mb-[40px]  lg:ml-[36px]">
+        <button className=" bg-accent py-3 lg:py-[22px] rounded-[900px] text-sm lg:text-[24px] text-white leading-[31.2px] lg:w-[85%] w-full mt-[32px] mb-[40px]  lg:ml-[36px]">
           Получить аудит
         </button>
       </div>

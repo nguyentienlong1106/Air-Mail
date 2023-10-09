@@ -22,10 +22,10 @@ const Poster = () => {
         количество писем до ваших пользователей.
       </h3>
       <div className="grid lg:flex mt-[48px] gap-5 lg:gap-[59px]">
-        <button className="bg-accent text-white  py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
+        <button className="bg-accent text-white  py-2 lg:py-[20px] rounded-[900px] text-sm lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
           <Link href="/service">Смотреть услуги</Link>
         </button>
-        <button className="border-accent border-solid border-2 py-2 lg:py-[20px] rounded-[900px] text-lg lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] hover:scale-110 duration-100 px-1">
+        <button className="border-accent border-solid border-2 py-2 lg:py-[20px] rounded-[900px] text-sm lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] hover:scale-110 duration-100 px-1">
           Получить консультацию
         </button>
       </div>
