@@ -7,15 +7,24 @@ import Image from "next/image";
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const [enabled, setEnabled] = useState(true);
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setEnabled(storedTheme === "dark");
+    }
+  }, []);
+
+  useEffect(() => {
     if (mounted) {
-      setTheme(enabled ? "light" : "dark");
+      const newTheme = enabled ? "dark" : "light";
+      setTheme(newTheme);
+      localStorage.setItem("theme", newTheme);
     }
   }, [mounted, enabled, setTheme]);
 
