@@ -47,7 +47,7 @@ const Guide = () => {
         {Data.map((e, i) => (
           <div
             key={i}
-            className="col-span-1 h-[300px] lg:h-[526px] lg:w-auto rounded-[30px] bg-accent p-20 relative text-white"
+            className="col-span-1 h-[300px] lg:h-[526px] lg:w-auto rounded-[30px] bg-accent p-20 relative text-white "
           >
             <Image
               src="/angle.svg"
@@ -66,7 +66,7 @@ const Guide = () => {
           </div>
         ))}
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden mx-[-16px]">
         <Swiper
           slidesPerView={1}
           spaceBetween={24}
@@ -81,7 +81,7 @@ const Guide = () => {
             <SwiperSlide key={i}>
               <div
                 key={i}
-                className=" h-[350px] rounded-[30px] bg-accent p-8 relative text-white mt-[24px]"
+                className=" h-[350px] rounded-[30px] bg-accent p-8 relative text-white mt-[24px] mx-2"
               >
                 <Image
                   src="/angle.svg"

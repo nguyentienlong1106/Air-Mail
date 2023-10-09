@@ -96,7 +96,7 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
         speed={2000}
       >
         {Data.map((e, i) => (
-          <SwiperSlide key={i} className="relative p-4">
+          <SwiperSlide key={i} className="relative p-2">
             <div
               className={`relative w-full lg:w-[1064px] h-[436px] lg:border-[3px] lg:border-solid lg:border-accent rounded-[30px] overflow-hidden ${e.bg_img} bg-no-repeat bg-cover bg-center lg:bg-none`}
             >

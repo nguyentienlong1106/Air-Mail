@@ -29,7 +29,7 @@ const Seo_infor = () => {
           <div className="col-span-1 ">
             <span
               itemProp="owns"
-              className=" bg-accent py-3 px-5 rounded-[50px] text-lg font-ubuntu leading-[56px] text-white"
+              className=" bg-accent py-3 px-1 rounded-[50px] text-lg font-ubuntu leading-[56px] text-white"
             >
               Евгений Румянцев{" "}
             </span>
