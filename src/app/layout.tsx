@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Provider from "./Provider";
+import Providers from "./Providers";
 import { Footer, Header } from "@/components/layout";
 import "@/style/globals.scss";
 import Design from "./Design";
@@ -23,14 +24,16 @@ export default function RootLayout({
   return (
     <html lang="ru" suppressHydrationWarning>
       <body className={`${inter.className} container_zoom`}>
-        <Design />
-        <Provider>
-          <div className="container mx-auto px-4">
-            <Header />
-            {children}
-          </div>
-          <Footer />
-        </Provider>
+        <Providers>
+          <Provider>
+            <Design />
+            <div className="container mx-auto px-4">
+              <Header />
+              {children}
+            </div>
+            <Footer />
+          </Provider>
+        </Providers>
       </body>
     </html>
   );

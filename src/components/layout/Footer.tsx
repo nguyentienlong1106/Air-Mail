@@ -61,11 +61,17 @@ const Footer = () => {
           </div>
           <div className="lg:col-span-1 lg:ml-[100px] grid grid-cols-2 lg:grid-cols-1 justify-items-start">
             <div className="">
-              <Link href="/" className="flex items-center gap-[10px] mt-[10px]">
+              <Link
+                href="https://t.me/humanlead"
+                className="flex items-center gap-[10px] mt-[10px]"
+              >
                 <Image src="/Telegram (1).png" alt="" width={32} height={32} />{" "}
                 Telegram
               </Link>
-              <Link href="/" className="flex items-center gap-[10px] mt-[20px]">
+              <Link
+                href="https://wa.me/79219565548"
+                className="flex items-center gap-[10px] mt-[20px]"
+              >
                 <Image src="/Whats App (1).png" alt="" width={32} height={32} />{" "}
                 WhatsApp
               </Link>

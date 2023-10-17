@@ -44,10 +44,10 @@ const Seo_infor = () => {
             <span itemProp="email">Info@airmail.ru</span>
           </div>
           <div className="flex gap-5">
-            <Link href="/">
+            <Link href="https://t.me/humanlead">
               <Image alt="" src="/Teleicon.png" width={40} height={40} />
             </Link>
-            <Link href="/">
+            <Link href="https://wa.me/79219565548">
               <Image alt="" src="/WSC.png" width={40} height={40} />
             </Link>
             <Link href="/">

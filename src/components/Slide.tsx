@@ -91,7 +91,6 @@ const Slide = ({ title, styleText }: { title: string; styleText: string }) => {
           delay: 4000,
           disableOnInteraction: false,
         }}
-        pagination={{ clickable: true }}
         loop={true}
         speed={2000}
       >

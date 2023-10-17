@@ -50,10 +50,10 @@ const NavBar = () => {
 
             <li className=" text-xl text-left p-5 border-b-4 border-gray-400 flex justify-between mt-4 shadow-xl dark:shadow-gray-500 shadow-gray-100">
               <div className="flex items-center gap-4">
-                <Link href="/">
+                <Link href="https://t.me/humanlead">
                   <Image src="/Telegram.png" alt="" width={40} height={40} />
                 </Link>
-                <Link href="/">
+                <Link href="https://wa.me/79219565548">
                   <Image src="/Whats App.png" alt="" width={40} height={40} />
                 </Link>
                 <span className="text-sm leading-[23.4px] mr-[48px] text-[#707070] ">
