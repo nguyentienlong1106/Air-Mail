@@ -23,7 +23,7 @@ export const metadata = {
     emails: "Info@airmail.ru",
     phoneNumbers: "+7(921)956-55-48",
     images: [
-      `https://raw.githubusercontent.com/nguyentienlong1106/Air-Mail/main/public/Group1.png`,
+      `https://raw.githubusercontent.com/nguyentienlong1106/Air-Mail/main/public/Group.png`,
     ],
   },
 };
