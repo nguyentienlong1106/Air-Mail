@@ -26,10 +26,10 @@ const Header = () => {
         <NavBar />
       </div>
       <div className="hidden lg:flex col-span-1 justify-end items-center gap-[24px]">
-        <Link href="/">
+        <Link href="/https://t.me/humanlead">
           <Image src="/Telegram.png" alt="" width={44} height={44} />
         </Link>
-        <Link href="/">
+        <Link href="/https://wa.me/79219565548">
           <Image src="/Whats App.png" alt="" width={44} height={44} />
         </Link>
         <span className="text-[18px] leading-[23.4px] mr-[48px] text-[#707070] ">

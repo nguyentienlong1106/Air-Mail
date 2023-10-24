@@ -26,7 +26,7 @@ const Poster = () => {
           <Link href="/service">Смотреть услуги</Link>
         </button>
         <button className="border-accent border-solid border-2 py-2 lg:py-[20px] rounded-[900px] text-sm lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] hover:scale-110 duration-100 px-1">
-          Получить консультацию
+          <Link href="#contact"> Получить консультацию</Link>
         </button>
       </div>
     </div>

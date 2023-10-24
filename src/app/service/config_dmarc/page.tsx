@@ -9,6 +9,12 @@ import {
   Seo_infor,
 } from "@/components";
 import Image from "next/image";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Настройка DMARC политики",
+  description: "...",
+};
 
 const page = () => {
   return (
@@ -23,10 +29,10 @@ const page = () => {
         </h3>
         <div className="grid lg:flex gap-5 lg:gap-[59px] mt-[84px]">
           <button className="bg-accent text-white py-2 lg:py-[20px] rounded-[900px] text-sm lg:text-[24px] leading-[31px] w-auto lg:w-[452px] hover:scale-110 duration-100">
-            Заказать услугу
+            <Link href="#contact"> Заказать услугу</Link>
           </button>
           <button className="border-accent border-solid border-2  py-2 lg:py-[20px] rounded-[900px] text-sm lg:text-[24px] leading-[31px] w-[300px] lg:w-[452px] overflow-hidden z-10 bg-white dark:bg-black hover:scale-110 duration-100 px-1">
-            Получить консультацию
+            <Link href="#contact"> Получить консультацию</Link>
           </button>
           <Image
             src="/Mouse_b.png"

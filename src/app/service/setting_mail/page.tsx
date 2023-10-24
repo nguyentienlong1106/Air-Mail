@@ -11,6 +11,11 @@ import {
   Seo_infor,
 } from "@/components";
 
+export const metadata = {
+  title: "Настройка сервисов почтовых рассылок",
+  description: "...",
+};
+
 const page = () => {
   return (
     <div>

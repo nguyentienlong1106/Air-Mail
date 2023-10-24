@@ -37,7 +37,7 @@ const Footer = () => {
               <Link href="/service">Услуги</Link>
             </h2>
             <p itemProp="offers" className="mt-[24px]">
-              <Link href="/service/email/Yandex">Настройка ESP</Link>
+              <Link href="/service/setting_mail">Настройка ESP</Link>
             </p>
             <p itemProp="offers" className="mt-[20px]">
               <Link href="/service/conslusionSpam">Вытаскиваем из спама</Link>
@@ -75,13 +75,16 @@ const Footer = () => {
                 <Image src="/Whats App (1).png" alt="" width={32} height={32} />{" "}
                 WhatsApp
               </Link>
-              <Link href="/" className="flex items-center gap-[10px] mt-[20px]">
+              <Link
+                href="Info@airmail.ru"
+                className="flex items-center gap-[10px] mt-[20px]"
+              >
                 <Image src="/Mail.png" alt="" width={32} height={32} />{" "}
                 Info@airmail.ru
               </Link>
               <span className="flex items-center gap-[10px] mt-[20px]">
-                <Image src="/Phone.png" alt="" width={32} height={32} /> +7 921
-                956-55-48
+                <Image src="/Phone.png" alt="" width={32} height={32} /> +7
+                (921) 956-55-48
               </span>
             </div>
 
@@ -95,10 +98,11 @@ const Footer = () => {
           </div>
         </div>
         <div className=" hidden lg:flex justify-end items-center gap-[24px] xl:mx-[80px] pb-[48px]">
-          {" "}
-          <button className="bg-accent px-10 py-3 rounded-[900px] text-sm lg:text-[18px] lg:leading-[18px] mr-[8px]">
-            Оставить заявку
-          </button>
+          <Link href="#contact">
+            <button className="bg-accent px-10 py-3 rounded-[900px] text-sm lg:text-[18px] lg:leading-[18px] mr-[8px]">
+              Оставить заявку
+            </button>
+          </Link>
         </div>
       </div>
     </footer>

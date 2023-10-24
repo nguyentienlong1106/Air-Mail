@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Seo_infor = () => {
   return (
-    <div className=" lg:bg-gradient-to-br lg:hover:bg-gradient-to-r lg:from-[#0019FF] lg:to-[#7481f8] lg:mt-[100px] lg:h-[775px] rounded-[32px] grid lg:grid-cols-5 gap-[24px] z-10 relative">
+    <div className=" lg:bg-gradient-to-br lg:hover:bg-gradient-to-r lg:from-[#0019FF] lg:to-[#7481f8] lg:mt-[100px] lg:h-[775px] rounded-[32px] grid lg:grid-cols-4 gap-[24px] z-10 relative">
       <div
         itemScope
         itemType="https://schema.org/Person"
@@ -74,7 +74,7 @@ const Seo_infor = () => {
           CEO{" "}
         </span>
       </div>
-      <div className="lg:col-span-3 hidden lg:block text-white mt-[200px]">
+      <div className="lg:col-span-2 hidden lg:block text-white mt-[200px]">
         <h2 className="font-ubuntu text-[36px] font-medium leading-[50px] mb-[24px]">
           Позвоните нам
         </h2>

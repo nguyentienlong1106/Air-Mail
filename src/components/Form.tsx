@@ -44,7 +44,7 @@ const Form = () => {
         {!successMessage && (
           <>
             <input
-              type="text"
+              type="number"
               {...register("phone", {
                 required: {
                   value: true,

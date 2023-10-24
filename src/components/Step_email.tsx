@@ -10,6 +10,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import "@/style/globals.scss";
+import Link from "next/link";
 
 const Data = [
   {
@@ -122,9 +123,11 @@ const Step_email = () => {
         </Swiper>
       </div>
       <div className="grid">
-        <button className="bg-accent py-3 lg:px-11 lg:py-5 text-white rounded-[900px] text-sm lg:text-[24px] lg:leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-14rem] hover:scale-110 duration-100">
-          Узнать точную стоимость вывода из спама услугу
-        </button>
+        <Link href="#contact">
+          <button className="bg-accent py-3 lg:px-11 lg:py-5 text-white rounded-[900px] text-sm lg:text-[24px] lg:leading-[31px] mt-[56px] lg:absolute lg:right-20 lg:bottom-[-14rem] hover:scale-110 duration-100">
+            Узнать точную стоимость вывода из спама услугу
+          </button>
+        </Link>
       </div>
     </div>
   );
